@@ -1,0 +1,26 @@
+{
+  "prepared_utc_date": "2026-11-15",
+  "kaggle_notebook": "https://www.kaggle.com/code/bcau2025/unigdnetr-full-experiment-gpu/edit",
+  "source_notebook_sha256": "ce296301d1de7b12c35970203201e63ccdbd1ba7d399d97653a5f2c207d47f95",
+  "gpu_verified": [
+    "Tesla T4",
+    "Tesla T4"
+  ],
+  "active_gpu_per_model": 1,
+  "cohorts_verified_in_kaggle": {
+    "brats": {
+      "scans": 1251,
+      "patient_groups": 1133
+    },
+    "lits": {
+      "scans": 131,
+      "patient_groups": 131
+    },
+    "acdc": {
+      "scans": 200,
+      "patient_groups": 100
+    }
+  },
+  "training_complete": false,
+  "held_out_evaluation_complete": false
+}

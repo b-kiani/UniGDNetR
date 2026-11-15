@@ -1,0 +1,12 @@
+__pycache__/
+.ipynb_checkpoints/
+.env
+kaggle.json
+*.pt
+*.pth
+*.nii
+*.nii.gz
+*.lock
+*.tmp
+data/
+checkpoints/
