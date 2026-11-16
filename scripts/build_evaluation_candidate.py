@@ -48,8 +48,9 @@ for i in range(1,19):
         c=cell('code','PIPELINE_STAGE="evaluate"\nREAD_ONLY_PREPARED_ARTIFACTS=True\nREQUIRE_PREPARED_INDICES=True\n')
     new.append(c)
 new.append(cell('code',(ROOT/'scripts/evaluation_buffers.py').read_text()))
+new.append(cell('code',(ROOT/'scripts/evaluation_memory.py').read_text()))
 new.append(cell('code',(ROOT/'scripts/evaluation_guardrails.py').read_text()+'\nprint(\"PATIENT SPLITS VERIFIED\", validate_splits(splits))\n'))
-port_sources=[original,Path(__file__),ROOT/'notebooks/UniGDNetR_Kaggle_Full_Experiment.ipynb']+[ROOT/'scripts'/name for name in ['evaluation_buffers.py','evaluation_guardrails.py','evaluation_case_cache.py','evaluation_case_runtime.py']]
+port_sources=[original,Path(__file__),ROOT/'notebooks/UniGDNetR_Kaggle_Full_Experiment.ipynb']+[ROOT/'scripts'/name for name in ['evaluation_buffers.py','evaluation_memory.py','evaluation_guardrails.py','evaluation_case_cache.py','evaluation_case_runtime.py']]
 port_digest=hashlib.sha256(b''.join(path.read_bytes() for path in port_sources)).hexdigest()
 new.append(cell('code',(ROOT/'scripts/evaluation_case_cache.py').read_text()+f'\nEVALUATION_PORT_ID = {port_digest!r}\nEVALUATION_SESSION_PAUSED = False\n'))
 for i,c in enumerate(evaluation['cells']):
@@ -77,10 +78,15 @@ for i,c in enumerate(evaluation['cells']):
             call_end=body.index('corruption)')+len('corruption)')
             call=body[:call_end].replace('pred, probs, entropy, gt =','store, gt =')
             rest=body[call_end:].lstrip('\n')
-            replacement=call+'\n        with store:\n            pred, probs, entropy = store.pred, store.probs, store.entropy\n'+''.join('    '+line+'\n' for line in rest.splitlines())
+            replacement=call+'\n        CASE_CACHE.clear()\n        with store:\n            pred, probs, entropy = store.pred, store.probs, store.entropy\n'+''.join('    '+line+'\n' for line in rest.splitlines())
             s=s[:start]+replacement+s[end:]
             # Keep exact original ECE voxel sampling/bin convention with bounded buffers.
             s+='\nece_score = chunked_ece\n'
+            s+='\nhd95_binary = hd95_cropped_sequential\n'
+            s=s.replace('for region, (p, y) in task_regions(task, pred, gt).items():',
+                        'for region, (p, y) in iter_task_regions(task, pred, gt, TASK_SPECS):')
+            s=s.replace('affine = nib.as_closest_canonical(nib.load(record["images"][0])).affine',
+                        'affine = canonical_header(record["images"][0]).affine')
         if i==27:
             s+='\n'+(ROOT/'scripts/evaluation_case_runtime.py').read_text()
         if i==33:
