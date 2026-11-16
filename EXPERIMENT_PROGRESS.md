@@ -98,3 +98,11 @@ Live signed-in Kaggle logs confirmed **run 1/21, UniGDNetR seed 13** completed e
 Epoch 5 training reached **475/2,500 batches (19%)** at session second **17,151.7**. A recovery checkpoint was logged at second **16,936.5**, phase train, epoch 5, batch 366. These saves are in the active working directory, not yet verified published outputs. Version 4 remains active and unchanged; V2 remains the trusted published recovery source pending V4 output verification. No restart, cancellation, edit or duplicate job occurred.
 
 Still **0/21 completed models** and **no held-out results**. The rounded epoch 4 value is added to `provisional_validation.csv`; it is not a final test metric. Evaluation readiness remains as recorded in `EVALUATION_READINESS.md`: 21 local CPU software tests passed, but CUDA/real-volume/calibration/scenario and live recovery gates remain unresolved. No unchanged checks were rerun and no evaluation job was launched.
+
+## Version 4 — epoch 5 completed, epoch 6 training — 2026-11-16T12:28:41Z
+
+Signed-in live Kaggle logs confirm run **1/21, UniGDNetR seed 13** completed epoch 5 at session second **27,753.0**. Provisional validation macro Dice **0.13780** improved the best score (epoch 4: 0.12009), with bad_epochs 0. The epoch took 03:20:24 according to the log; this is a measured epoch duration, not a finish estimate for all models.
+
+Epoch 6 training reached **1,475/2,500 batches (59%)** at second **32,338.0**. A working recovery checkpoint was logged at second **32,280.6**, epoch 6, phase train, batch **1,434**. The session is still running, around nine hours elapsed. A pause near the ten-hour budget is expected, but has not occurred or been verified. V2 remains the trusted published recovery output until V4 ends and its published checkpoints, recovery status, migration receipt and content provenance are verified. No healthy job was edited, cancelled, restarted or duplicated.
+
+Still **0/21 completed models**, no held-out results, and no supported full-study finish estimate. The CSV contains rounded provisional validation scores only. Evaluation remains blocked pending the documented CUDA, real-volume, calibration/scenario and live pause/resume gates; the 21 passing local tests do not count as completed models.
