@@ -1,0 +1,178 @@
+{
+  "source_notebook_version": "369935019",
+  "source_versions": {
+    "aiocta/brats2023-part-1": 1,
+    "aiocta/brats2023-part-2zip": 1,
+    "andrewmvd/liver-tumor-segmentation": 5,
+    "andrewmvd/liver-tumor-segmentation-part-2": 2,
+    "samdazel/automated-cardiac-diagnosis-challenge-miccai17": 2
+  },
+  "source_version_evidence": "Kaggle saved Version 2 Input tab, inspected 16 November 2026; continuation must explicitly pin these versions.",
+  "legacy_combined_fingerprint": "1547fb5aa79b786d8eabc7fed86ee4cbbedc3e1d0be7f3c19f348a0ec6ebf3cb",
+  "files": {
+    "checkpoints/UniGDNetR_seed13.pt": {
+      "bytes": 5026627,
+      "sha256": "a9d1455cf18a20b4b9283fd70964ed2f9c29f0063bfbbc8981c38dbe42e42bfc"
+    },
+    "checkpoints/UniGDNetR_seed13_resume.pt": {
+      "bytes": 20140921,
+      "sha256": "07d86083a42a99312e53a4c024e0b82d81db5745525ab2147dcb9c4274d0005d"
+    },
+    "checkpoints/UniGDNetR_seed13_resume_status.json": {
+      "bytes": 348,
+      "sha256": "f8cc85406faca86acf3eeb61d663b19042646d6e0bb05937d231145a889449d7"
+    },
+    "data_repairs/BraTS-GLI-00818-000/BraTS-GLI-00818-000-seg.nii.gz": {
+      "bytes": 60180,
+      "sha256": "7a6f3090c071ea67fb4baeec2eb2bba60a2689b6aaf1d29c367d30a16cec3b51"
+    },
+    "data_repairs/BraTS-GLI-00818-000/BraTS-GLI-00818-000-t1c.nii.gz": {
+      "bytes": 5807271,
+      "sha256": "8053379e6cfdef32f9c5480966fd1124afb0405c9f8a3b8f452b99cdb3c0f3c3"
+    },
+    "data_repairs/BraTS-GLI-00818-000/BraTS-GLI-00818-000-t1n.nii.gz": {
+      "bytes": 5865819,
+      "sha256": "4a861b69b0950e23cfd9e6ca91cc8574b0b15bcda1bdee5f8fdf79f7ddded78f"
+    },
+    "data_repairs/BraTS-GLI-00818-000/BraTS-GLI-00818-000-t2f.nii.gz": {
+      "bytes": 5856321,
+      "sha256": "8de244997d5b83bd75a3dc3e1a7cd61f0b885518b29d5216bce7759b7ec61d4e"
+    },
+    "data_repairs/BraTS-GLI-00818-000/BraTS-GLI-00818-000-t2w.nii.gz": {
+      "bytes": 5968628,
+      "sha256": "69c40f321b10f3b1961aa2f2cc5d6af029214ea3e3a0212a40d9d80f95d11daa"
+    },
+    "data_repairs/BraTS-GLI-01462-000/BraTS-GLI-01462-000-seg.nii.gz": {
+      "bytes": 64284,
+      "sha256": "ad390c22f0db6195d7093b1f44090308cee01ceac696916cf5eb49efb3dfa58f"
+    },
+    "data_repairs/BraTS-GLI-01462-000/BraTS-GLI-01462-000-t1c.nii.gz": {
+      "bytes": 1895113,
+      "sha256": "dc35a79f78063e7a07a09f78e56a9bb0d3f9290d923209a1fc38fb1d4509f037"
+    },
+    "data_repairs/BraTS-GLI-01462-000/BraTS-GLI-01462-000-t1n.nii.gz": {
+      "bytes": 2411583,
+      "sha256": "d86a10fd90b645ae05f0a0b4a217d0795bf7c813d964bf6a61f0a18e3265bedf"
+    },
+    "data_repairs/BraTS-GLI-01462-000/BraTS-GLI-01462-000-t2f.nii.gz": {
+      "bytes": 2250291,
+      "sha256": "81150a859f9820382b3cfa3a784b218c3c6419df770da437aef57dcb233f4628"
+    },
+    "data_repairs/BraTS-GLI-01462-000/BraTS-GLI-01462-000-t2w.nii.gz": {
+      "bytes": 2504264,
+      "sha256": "c1896c4adc7c4f8a95c619dae94488b86127a57891e9d26705889222643f65d8"
+    },
+    "data_repairs/BraTS-GLI-01486-000/BraTS-GLI-01486-000-seg.nii.gz": {
+      "bytes": 61054,
+      "sha256": "356e81c6d5c6d0841135fed0791bc1dd7336d6e76ef7caaf64e973be95e1a394"
+    },
+    "data_repairs/BraTS-GLI-01486-000/BraTS-GLI-01486-000-t1c.nii.gz": {
+      "bytes": 1969685,
+      "sha256": "09cfe161b16614ef99d50230281037d348ad9d7fe130c725b4e4d131fa325099"
+    },
+    "data_repairs/BraTS-GLI-01486-000/BraTS-GLI-01486-000-t1n.nii.gz": {
+      "bytes": 1911513,
+      "sha256": "7bcdccbd7667c84bcfe0ebd12b94e26566abede1e42bc785dc5b4bbb53dbda90"
+    },
+    "data_repairs/BraTS-GLI-01486-000/BraTS-GLI-01486-000-t2f.nii.gz": {
+      "bytes": 2052923,
+      "sha256": "d66184f89701a7b5ae425ccc756c8b20cce846de4a4a2d2cf60d312900938523"
+    },
+    "data_repairs/BraTS-GLI-01486-000/BraTS-GLI-01486-000-t2w.nii.gz": {
+      "bytes": 2080354,
+      "sha256": "7b0a362a6efb6898066c265c84ce51eefcba0caf22b202ebe45eb1bf8b308cb2"
+    },
+    "logs/UniGDNetR_seed13_history.csv": {
+      "bytes": 807,
+      "sha256": "e63067c742275978dc06654f17b60a7924dd61e1c4279860a7c5572ea9df3975"
+    },
+    "manifests/acdc_splits_seed13.json": {
+      "bytes": 114850,
+      "sha256": "8d80f5cbc50c0b18d8b748407a9d5b37beab9ba738a2c20d180975e858d129af"
+    },
+    "manifests/brats_repair_sources.json": {
+      "bytes": 4213,
+      "sha256": "4142a7f9116b961185647e2418cf20de8e15d65bb44793b55c6fbf680e14991d"
+    },
+    "manifests/brats_repair_verification.json": {
+      "bytes": 2575,
+      "sha256": "0bf11c17d29def18bf85029630c3c88db65ff4abe2ee9f7f4331519a5076edf3"
+    },
+    "manifests/brats_splits_seed13.json": {
+      "bytes": 1153985,
+      "sha256": "e7d132c0753e2c787e9bb82e27ce9af11e6cc8697eec549440d786796c21e184"
+    },
+    "manifests/dataset_fingerprints.json": {
+      "bytes": 435,
+      "sha256": "a108be83844e03ebf79ff42e945cbbc3c1daf008abfa82560228a28277e43e4a"
+    },
+    "manifests/dataset_inventory.json": {
+      "bytes": 200,
+      "sha256": "327e4fdf89b7723986ed3485a6ec1ba961ce0680aac38537b9ce7b8213d6ebe0"
+    },
+    "manifests/dataset_pairing_integrity_audit.csv": {
+      "bytes": 1488762,
+      "sha256": "bec5c446df8e0c6b8be80fa3487d5c0e34bd90e4dfdb941bd24c4304f670da11"
+    },
+    "manifests/experiment_plan.csv": {
+      "bytes": 1490,
+      "sha256": "29d57a58ba74c17277d730dbea69d62479de9f5fe40a36544175dcd88ce271a0"
+    },
+    "manifests/kaggle_cohorts.json": {
+      "bytes": 170,
+      "sha256": "c5fc81076ec43cea86d57bef142ce12359a53a3b978cc730c30be976a2dccbb7"
+    },
+    "manifests/kaggle_environment.json": {
+      "bytes": 161,
+      "sha256": "b5dc5639046b06cd5fca4782561997ae8205e369280fcb8bb594d83e0c778c5c"
+    },
+    "manifests/lits_splits_seed13.json": {
+      "bytes": 53073,
+      "sha256": "7d6c61386de15c0a80d35b7b297210b8afc5835c67f7861557ac9a83892f9d32"
+    },
+    "manifests/unigdnetr_kaggle_session.json": {
+      "bytes": 544,
+      "sha256": "a2942168ed2635b99d32d5f96a8775802131f0735b55c0a58283ead9805ccdb4"
+    },
+    "manifests/unigdnetr_prepared.json": {
+      "bytes": 2906,
+      "sha256": "6270dc87fbe4aefe69ce1b755a49882d1e0faf82d0e80fa7fd4342908dac003d"
+    },
+    "slice_indices/acdc_test_b8b1c81d8b89.csv": {
+      "bytes": 51727,
+      "sha256": "8ee8d6d95310c99b162ddedf760907eed165cc78bfc072fb6059a19aed2b437e"
+    },
+    "slice_indices/acdc_train_e01529c32a67.csv": {
+      "bytes": 237289,
+      "sha256": "bf0e16929611e765aeb6ab4bf033d5dbda4494575da75e8712b89979fc95ffc3"
+    },
+    "slice_indices/acdc_val_99ac47fa70e7.csv": {
+      "bytes": 61805,
+      "sha256": "0339bfc0a9f3fa76207bb22fbb64145d6c041d3c10626bb1be7a745a7cc20030"
+    },
+    "slice_indices/brats_test_2492fa5b7907.csv": {
+      "bytes": 2519462,
+      "sha256": "6752d1406f7126f307ecc8ceb1b12f5407e2e1d39c61280bf523f5f49b5f5a07"
+    },
+    "slice_indices/brats_train_9e345930f8b7.csv": {
+      "bytes": 11818759,
+      "sha256": "983057d03cca44a4d411ed45b55c8a826ee500fb07b51519abe3c18791aca31f"
+    },
+    "slice_indices/brats_val_f7733ad450ad.csv": {
+      "bytes": 2551411,
+      "sha256": "18da7dedff88d02e1752df6a05c1df47e242760c93b638f838ccc8e33626df56"
+    },
+    "slice_indices/lits_test_f279b86bc5b7.csv": {
+      "bytes": 457679,
+      "sha256": "c5c9c2f987786c1be3ad68334556787eef3ee14f9fee0c095354540ff9bd6b7d"
+    },
+    "slice_indices/lits_train_06601c03bf04.csv": {
+      "bytes": 2042982,
+      "sha256": "1eff571a6e541177cfae40f372150c310b7910055c427c5e7d91166013781546"
+    },
+    "slice_indices/lits_val_3a72ded34b96.csv": {
+      "bytes": 408782,
+      "sha256": "e78ee9c2ff748aa0ea6c8da7e7c53859fa7d36888322ca7b5ec65831580c2947"
+    }
+  }
+}

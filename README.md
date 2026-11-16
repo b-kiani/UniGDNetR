@@ -67,3 +67,7 @@ git push
 ```
 
 No background result synchronization is active. Do not store Kaggle API credentials or GitHub tokens in notebook source or Git history. The complete source tree is also distributed as `UniGDNetR_Source_20261116.zip`. Extract it at the repository root to restore the `notebooks/` and `scripts/` layout. A convenient runnable notebook copy is available at the repository root. See `EXPERIMENT_PROGRESS.md` and `provisional_validation.csv` for dated, explicitly provisional results. The full study and held-out evaluation are incomplete.
+
+## Content-based recovery correction (16 November 2026)
+
+See `RECOVERY_NOTES.md` for the explicit V2 migration trust boundary and verification. Source versions must be pinned to BraTS 1/1, LiTS 5/2 and ACDC 2. The updated runnable notebook hashes all current source bytes, verifies the exact original recovery artifacts and preserves checkpoint bytes. Future sessions compare saved SHA-256 content provenance. The scientific configuration is unchanged. Live verification is required before claiming resumed training.

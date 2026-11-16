@@ -40,12 +40,11 @@
   },
   "header_audit": "passed_in_kaggle",
   "current_saved_run": {
-    "version_id": "370097607",
-    "url": "https://www.kaggle.com/code/bcau2025/unigdnetr-full-experiment-gpu?scriptVersionId=370097607",
-    "state": "cancelled_during_preparation",
-    "stage_at_last_check": "fingerprint mismatch; checkpoint resume unverified",
-    "session_soft_budget_hours": 10,
-    "dataset_fingerprint_observed": "2b915d23dfe11c20fca2947abc78a66685bbfcb923402edb15f6a99d0e2db50d"
+    "version_id": "370110745",
+    "url": "https://www.kaggle.com/code/bcau2025/unigdnetr-full-experiment-gpu?scriptVersionId=370110745",
+    "state": "running_recovery_audit",
+    "stage_at_last_check": "exact V2 artifact set verified; integrity audit passed; content hashes 400/6917 (5.8%); checkpoint resume not yet verified",
+    "session_soft_budget_hours": 10
   },
   "github_uploaded_files": [
     ".gitignore",
@@ -66,5 +65,20 @@
     "validation_batches_total": 567
   },
   "github_transfer_note": "Source archive, runnable notebook, repair manifest, progress report and provisional validation CSV verified in the public repository.",
-  "recovery_blocker": "Dataset fingerprint differs after restoring V2 output; no compatibility bypass authorized or performed."
+  "recovery_blocker": "A documented content identity migration is undergoing live verification in Version 4. Do not claim resume until checkpoint acceptance and continued validation appear.",
+  "cancelled_recovery_attempt": {
+    "version_id": "370097607",
+    "url": "https://www.kaggle.com/code/bcau2025/unigdnetr-full-experiment-gpu?scriptVersionId=370097607",
+    "state": "cancelled_during_preparation",
+    "stage_at_last_check": "fingerprint mismatch; checkpoint resume unverified",
+    "session_soft_budget_hours": 10,
+    "dataset_fingerprint_observed": "2b915d23dfe11c20fca2947abc78a66685bbfcb923402edb15f6a99d0e2db50d"
+  },
+  "source_versions_verified_and_pinned": {
+    "aiocta/brats2023-part-1": 1,
+    "aiocta/brats2023-part-2zip": 1,
+    "andrewmvd/liver-tumor-segmentation": 5,
+    "andrewmvd/liver-tumor-segmentation-part-2": 2,
+    "samdazel/automated-cardiac-diagnosis-challenge-miccai17": 2
+  }
 }

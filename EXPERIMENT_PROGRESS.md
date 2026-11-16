@@ -41,3 +41,15 @@ The study retains seven variants, seeds 13/37/71, maximum 40 epochs per run, ori
 6. Publish the final report and small derived results in this repository only after the required checks pass. Include Kaggle output links for checkpoints and an explicit limitations section.
 
 There is no reliable overall completion date yet. Further sessions and available GPU quota are required.
+
+## Recovery correction prepared
+
+A content-based recovery correction has passed local tests and exact comparison of all training Config values against the V2 preparation marker. Full V2/V3 output archive comparison found only fingerprint, inventory and session-state JSON changed; all other saved files are byte-identical. The generated notebook will hash current source content, verify the 41 anchored V2 artifacts, require unchanged splits/repairs/geometry/configuration and record a narrowly scoped legacy migration without rewriting checkpoint bytes. The immutable input version pins are documented in `RECOVERY_NOTES.md`. Live Kaggle recovery has not yet been verified. No additional training or final results are claimed.
+
+## Version 4 — live recovery verification
+
+[Version 4](https://www.kaggle.com/code/bcau2025/unigdnetr-full-experiment-gpu?scriptVersionId=370110745), “V2 recovery with verified content provenance”, is running on GPU T4 x2. Only one active event was visible. The five source dataset snapshots were explicitly pinned to the exact V2 numbered versions (BraTS v1/v1, LiTS v5/v2, ACDC v2).
+
+Live logs verified the exact 41 original V2 recovery artifacts at 63.4 seconds, all 15 repaired files, and the integrity audit of 1,582 records/5,335 image-mask combinations at 148.4 seconds. At 237.5 seconds, the new source content audit reached **400/6,917 files (5.8%)**. It is reading actual bytes, not rebuilding slice indices. The full checksum audit, explicit migration and checkpoint acceptance are still pending; **training resume has not yet been verified**.
+
+Last verified log observation: 16 November 2026 around 03:31 UTC (08:31 Asia/Tashkent). Original V2 checkpoints remain preserved. Zero training runs and no final held-out evaluation are complete. The ten-hour session budget is a checkpoint pause limit, not a study completion estimate.
