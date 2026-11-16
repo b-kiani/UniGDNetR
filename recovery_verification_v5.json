@@ -1,0 +1,99 @@
+{
+  "verified_utc": "2026-11-16T23:52:14.739334+00:00",
+  "source_script_version": "370300234",
+  "source_output_url": "https://www.kaggle.com/code/bcau2025/unigdnetr-full-experiment-gpu/output?scriptVersionId=370300234",
+  "zip_files": 53,
+  "zip_integrity_passed": true,
+  "session": {
+    "state": "paused",
+    "pipeline_revision": "2026-10-25-brats-schema-rc-longitudinal-v7",
+    "dataset_fingerprint": "e8ab1ec322826bd08a468e7d17ad4fe60858b1c5f8467e770c5e5dc671394cb6",
+    "sources": [
+      "aiocta/brats2023-part-1",
+      "aiocta/brats2023-part-2zip",
+      "andrewmvd/liver-tumor-segmentation",
+      "andrewmvd/liver-tumor-segmentation-part-2",
+      "samdazel/automated-cardiac-diagnosis-challenge-miccai17"
+    ],
+    "elapsed_hours": 9.103919068985,
+    "final_test_evaluation_complete": false,
+    "saved_utc": "2026-11-16T22:56:43Z"
+  },
+  "recovery_status": {
+    "experiment": "UniGDNetR",
+    "seed": 13,
+    "phase": "train",
+    "epoch_human": 9,
+    "epochs_total": 40,
+    "batch": 480,
+    "batches_total": 2500,
+    "batches_consumed_by_task": {
+      "acdc": 160,
+      "brats": 160,
+      "lits": 160
+    },
+    "saved_utc": "2026-11-16T22:56:43Z",
+    "reason": "time interval",
+    "checkpoint": "/kaggle/working/UniGDNetR/checkpoints/UniGDNetR_seed13_resume.pt"
+  },
+  "checks": {
+    "checkpoint_load_cpu": true,
+    "model_ema_finite": true,
+    "history_epochs": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "optimizer_scheduler_scaler_rng_progress_present": true,
+    "configuration_and_task_fingerprints_match_verified_v4": true,
+    "immutable_artifacts_byte_identical_to_verified_v4": 46,
+    "experiment_plan_21_scientific_rows_match_v4_worker_identifier_only_differs": true,
+    "content_provenance_file_count": 6917
+  },
+  "artifacts": {
+    "checkpoints/UniGDNetR_seed13.pt": {
+      "bytes": 5026627,
+      "sha256": "d8604477c7a03e9e0edc593421514c41221a1732ba825f3b7fb56a4481989edf"
+    },
+    "checkpoints/UniGDNetR_seed13_resume.pt": {
+      "bytes": 20145273,
+      "sha256": "0c0e2f84eefa9c46b54a55c54587c9cd3f507651fa92d57bbe1ded594a33e49b"
+    },
+    "checkpoints/UniGDNetR_seed13_resume_status.json": {
+      "bytes": 388,
+      "sha256": "7fa9d9e89eaa3b915a81ae959d11adde063c4c355a4b7f0d300ed35d4126bed0"
+    },
+    "logs/UniGDNetR_seed13_history.csv": {
+      "bytes": 2578,
+      "sha256": "8dfafb9ed5fbe78fc9b2c1016068dc1ccbdd127cf65d424ba653fb8a36068413"
+    },
+    "manifests/content_provenance.json": {
+      "bytes": 2009880,
+      "sha256": "61842223c9a1ac3589950d13fec4bb98d1f1836ec90f72e279282c55cba69c96"
+    },
+    "manifests/dataset_inventory.json": {
+      "bytes": 465,
+      "sha256": "616bb97643006ca936cb7d2dfd98518386ed8a5986aa5203575007754d9c9c32"
+    },
+    "manifests/experiment_plan.csv": {
+      "bytes": 1490,
+      "sha256": "6e830f3044214aea695395446ed7bd7eaac0e323bd8ef9b73748fc11e0af89eb"
+    },
+    "manifests/legacy_v2_content_migration.json": {
+      "bytes": 950,
+      "sha256": "2b39c463d2c461cd15c59973800c14db6444d842737f6d1c44fde8eaa348c5af"
+    },
+    "manifests/unigdnetr_kaggle_session.json": {
+      "bytes": 540,
+      "sha256": "73d3d1ce0f0b505681ab0141deb56b50feeffdb532147a2023e65c8746cbcfe2"
+    }
+  },
+  "completed_models": 0,
+  "held_out_evaluation_complete": false,
+  "quota_observed": "29:48 / 30 hrs used; approximately 12 minutes remain, insufficient for full source byte audit. No new job launched."
+}
