@@ -116,3 +116,15 @@ The published output ZIP contains 53 files and passed archive integrity verifica
 A single new **Version 5 (370300234)** was started: https://www.kaggle.com/code/bcau2025/unigdnetr-full-experiment-gpu?scriptVersionId=370300234 . Kaggle confirmed the single notebook input update from version 2 to 4. Five dataset inputs, original pinned environment and Internet remained unchanged; GPU T4 x2 is selected and one active event was visible. Quota displayed 20:41/30 hours used, so the only code change (+1/-1 in saved-version diff) sets the operational session default to **9 hours** instead of 10, leaving time to publish before free quota exhaustion. All scientific training settings, 21-run plan and guards remain unchanged.
 
 V5 mounted the five sources and began preparation; full content rehash, cached index reuse and strict checkpoint acceptance must be observed before claiming training resumed. No duplicate job was started. Still **0/21 completed models** and no final held-out results. Evaluation approval remains closed pending its documented gates.
+
+## Version 5 — live checkpoint recovery verified — 2026-11-16T14:53:38Z
+
+Live signed-in logs for **Version 5 (370300234)** establish successful continuation from the verified V4 output:
+
+- 2,341.6 seconds: full content hash audit **6,917/6,917 (100%)**.
+- 2,341.8–2,342.0 seconds: unchanged content fingerprint `e8ab1ec322826bd08a468e7d17ad4fe60858b1c5f8467e770c5e5dc671394cb6`, content provenance and preparation verified.
+- 2,344.6–2,346.7 seconds: all **nine fingerprint-matched slice indices reused**.
+- 2,354.5–2,354.7 seconds: GPU preflight passed for BraTS, LiTS and ACDC.
+- 2,360.9 seconds: strict recovery header accepted, format 2, phase validation, epoch_index 5, batch 0, saved 2026-11-16T13:12:33Z. The log explicitly reports **RESUMED UniGDNetR/seed13 after training epoch 6; training will not repeat and validation will restart.**
+
+Latest observed: **run 1/21, UniGDNetR seed 13, epoch 6 validation 325/567 (57.3%)**, second 3,546.6. V5 remains running; its operational session cap is 9 hours. V4 remains the latest trusted published output until V5 ends and publication is independently verified. No active job was changed or duplicated during this check. There is no new completed epoch score, completed model or held-out result: **0/21 completed models**, no reliable full-study finish estimate. Evaluation remains blocked pending the documented remaining gates.
