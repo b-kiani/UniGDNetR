@@ -90,3 +90,11 @@ The blocked evaluation candidate now adds exact held-out matrix/absence checks, 
 The live Version4 job remained on run1/21, UniGDNetR seed13, epoch4. Latest observed heartbeat: **1,775/2,500 training batches (71%)**, session second11,395.7. A working recovery checkpoint was logged at second10,227.5, epoch4 batch1,317. No training edit, restart, cancellation or extra Kaggle job occurred. Still0/21 completed models, no held-out evaluation and no reliable full-study finish estimate.
 
 The evaluation candidate passed **21 local software tests** on PyTorch2.11 CPU; these are not21 trained models. Actual-model synthetic volume predictions match the recovered original across20 task/MC/corruption/missing-MRI comparisons, and CPU dropout/RNG recovery matches uninterrupted execution. HD95 and region memory reductions were checked against the original and profiled on synthetic CPU masks. Details and remaining CUDA/real-volume/live-session gates are in EVALUATION_READINESS.md and the two small validation/profile JSON reports. The candidate remains blocked from held-out execution.
+
+## Version 4 — epoch 4 completed, epoch 5 training — 16 November 2026, 08:14 UTC
+
+Live signed-in Kaggle logs confirmed **run 1/21, UniGDNetR seed 13** completed epoch 4 at session second **15,727.6**. Provisional validation macro Dice is **0.12009**, improved best 0.12009, bad_epochs 0 (epoch 3: 0.10908). The log reports 03:06:21 for epoch 4; this single-epoch measurement is not a reliable estimate for the full study.
+
+Epoch 5 training reached **475/2,500 batches (19%)** at session second **17,151.7**. A recovery checkpoint was logged at second **16,936.5**, phase train, epoch 5, batch 366. These saves are in the active working directory, not yet verified published outputs. Version 4 remains active and unchanged; V2 remains the trusted published recovery source pending V4 output verification. No restart, cancellation, edit or duplicate job occurred.
+
+Still **0/21 completed models** and **no held-out results**. The rounded epoch 4 value is added to `provisional_validation.csv`; it is not a final test metric. Evaluation readiness remains as recorded in `EVALUATION_READINESS.md`: 21 local CPU software tests passed, but CUDA/real-volume/calibration/scenario and live recovery gates remain unresolved. No unchanged checks were rerun and no evaluation job was launched.
