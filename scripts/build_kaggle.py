@@ -52,7 +52,7 @@ if len(resume_markers) > 1:
     raise RuntimeError("Attach exactly one previous UniGDNetR notebook output for recovery.")
 if resume_markers:
     resume_root = resume_markers[0].parent.parent
-    for name in ("manifests", "slice_indices", "checkpoints", "results", "figures", "tables", "logs"):
+    for name in ("manifests", "slice_indices", "checkpoints", "results", "figures", "tables", "logs", "data_repairs"):
         if (resume_root / name).exists():
             shutil.copytree(resume_root / name, KAGGLE_OUTPUT / name,
                             dirs_exist_ok=True, ignore=shutil.ignore_patterns("*.lock", "*.tmp", "locks"))
@@ -86,6 +86,14 @@ again. Checkpoint fingerprints and configuration must still match.
 The original Stage 3 evaluation notebook was not supplied. Training/validation
 logs are not final held-out paper results. No test-set scores are invented here.
 '''
+
+repair_code = (ROOT / "scripts/repair_brats.py").read_text()
+repair_manifest = json.loads((ROOT / "brats_repair_sources.json").read_text())
+bootstrap += '\n' + repair_code + '\nREPAIR_SOURCE = ' + repr(repair_manifest)
+bootstrap += '\nREPAIR_CASES = prepare_brats_repairs(KAGGLE_OUTPUT, REPAIR_SOURCE)\n'
+bootstrap += '\n' + (ROOT / 'scripts/content_provenance.py').read_text()
+bootstrap += '\nRECOVERY_BASELINE = ' + repr(json.loads((ROOT / 'recovery_baseline_v2.json').read_text())) + '\n'
+bootstrap += '\nif resume_markers and not (resume_root / \"manifests/content_provenance.json\").is_file():\n    verify_artifacts(resume_root, RECOVERY_BASELINE[\"files\"])\n    print(\"Exact V2 recovery artifact set verified before source hashing.\", flush=True)\n'
 
 new = [cell("markdown", intro), cell("code", bootstrap)]
 for i, original in enumerate(nb["cells"]):
@@ -122,6 +130,7 @@ all_records = {
 }
 # LiTS segmentation files occur in both parts. Pair the full source tree once,
 # so masks from part 1 can match image volumes from part 2.
+all_records["brats"] = apply_brats_repairs(all_records["brats"], REPAIR_CASES, OUTPUT_ROOT)
 for task, records in all_records.items():
     unique = {}
     for r in records:
@@ -142,21 +151,57 @@ if cohort_counts["acdc"]["patients"] != 100 or cohort_counts["acdc"]["scans"] !=
     raise RuntimeError("Expected ACDC training: 100 patients, two labeled frames each.")
 ''' + s[end:]
     elif i == 13:
-        s = s.replace('def canonical_header(path: str):\n    return nib.as_closest_canonical(nib.load(path))', '''def canonical_header(path: str):
+        s = s.replace('def canonical_header(path: str):\n    return nib.as_closest_canonical(nib.load(path))', '''from functools import lru_cache
+from concurrent.futures import ThreadPoolExecutor
+@lru_cache(maxsize=None)
+def canonical_header(path: str):
     # Reproduce canonical geometry without touching the voxel-array proxy.
     from types import SimpleNamespace
     image = nib.load(path)
+    if str(path).endswith(".nii"):
+        expected_bytes = int(image.dataobj.offset) + math.prod(image.shape) * image.get_data_dtype().itemsize
+        if Path(path).stat().st_size < expected_bytes:
+            raise ValueError(f"Truncated NIfTI file: {path}")
     orientation = nib.orientations.io_orientation(image.affine)
     order = np.argsort(orientation[:, 0]).astype(int)
     shape = tuple(int(image.shape[int(axis)]) for axis in order)
     affine = image.affine @ nib.orientations.inv_ornt_aff(orientation, image.shape[:3])
     return SimpleNamespace(shape=shape, affine=affine)''')
+        s = s.replace('audit_rows = []', '''audit_paths = sorted({p for rs in all_records.values() for r in rs for p in r["images"] + [r["mask"]]})
+empty_paths = [p for p in audit_paths if Path(p).stat().st_size == 0]
+if empty_paths:
+    raise RuntimeError("Empty dataset files; repair or replace the source before training: " + json.dumps(empty_paths))
+with ThreadPoolExecutor(max_workers=8) as header_pool:
+    list(tqdm(header_pool.map(canonical_header, audit_paths), total=len(audit_paths), desc="Header-only integrity audit", mininterval=10))
+audit_rows = []''')
     elif i == 17:
-        # A callback checkpoint is not needed yet: completed case indices persist
-        # only after each split finishes, just as in the source notebook.
-        s = s.replace('for record in tqdm(records, desc=f"Indexing {task}/{split_name}"):\n',
-                      'for record in tqdm(records, desc=f"Indexing {task}/{split_name}"):\n        check_session_budget()\n')
+        start = s.index('def file_signature(path: str) -> dict:')
+        end = s.index('def records_fingerprint(', start)
+        s = s[:start] + '''content_paths_total = len({p for rs in all_records.values() for r in rs for p in r["images"] + [r["mask"]]})
+def _content_progress(done, identity):
+    check_session_budget()
+    if done == 1 or done % 100 == 0 or done == content_paths_total:
+        print(f"CONTENT HASH AUDIT {done:,}/{content_paths_total:,} ({100*done/max(content_paths_total,1):.1f}%)", flush=True)
+CONTENT_PROVENANCE = ContentProvenance(
+    {**source_roots, "verified-repairs": OUTPUT_ROOT / "data_repairs"}, _content_progress)
+def file_signature(path: str) -> dict:
+    return CONTENT_PROVENANCE.signature(path)
+
+''' + s[end:]
+        s = s.replace('for record in tqdm(records, desc=f"Indexing {task}/{split_name}"):\n', 'for record in tqdm(records, desc=f"Indexing {task}/{split_name}"):\n        check_session_budget()\n')
+        s += '\n' + (ROOT / 'scripts/recovery_runtime.py').read_text()
     elif i == 25:
+        old_guard = 'if checkpoint.get("dataset_fingerprint") != expected_fingerprint:'
+        assert old_guard in s
+        s = s.replace(old_guard, 'if checkpoint.get("dataset_fingerprint") != expected_fingerprint and not legacy_checkpoint_verified(checkpoint):')
+        s += '''
+_original_torch_load_compat = torch_load_compat
+def torch_load_compat(path, map_location="cpu"):
+    payload = _original_torch_load_compat(path, map_location)
+    if isinstance(payload, dict):
+        payload["_verified_source_sha256"] = sha256_file(path)
+    return payload
+'''
         s = s.replace('                    )\n\n                train_log, train_seconds = train_one_epoch(',
                       '                    )\n                    check_session_budget()\n\n                train_log, train_seconds = train_one_epoch(')
         s = s.replace('            resume_train_state = None\n            resume_phase = "train"',
