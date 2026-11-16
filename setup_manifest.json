@@ -42,9 +42,12 @@
   "current_saved_run": {
     "version_id": "370110745",
     "url": "https://www.kaggle.com/code/bcau2025/unigdnetr-full-experiment-gpu?scriptVersionId=370110745",
-    "state": "running_recovery_audit",
-    "stage_at_last_check": "exact V2 artifact set verified; integrity audit passed; content hashes 400/6917 (5.8%); checkpoint resume not yet verified",
-    "session_soft_budget_hours": 10
+    "state": "running_resumed_validation",
+    "stage_at_last_check": "Full content audit and explicit migration verified; checkpoint accepted; epoch3 validation250/567 (44.1%)",
+    "session_soft_budget_hours": 10,
+    "dataset_fingerprint_observed": "e8ab1ec322826bd08a468e7d17ad4fe60858b1c5f8467e770c5e5dc671394cb6",
+    "checkpoint_resume_verified": true,
+    "last_observed_log_seconds": 2272.6
   },
   "github_uploaded_files": [
     ".gitignore",
@@ -65,7 +68,7 @@
     "validation_batches_total": 567
   },
   "github_transfer_note": "Source archive, runnable notebook, repair manifest, progress report and provisional validation CSV verified in the public repository.",
-  "recovery_blocker": "A documented content identity migration is undergoing live verification in Version 4. Do not claim resume until checkpoint acceptance and continued validation appear.",
+  "recovery_blocker": null,
   "cancelled_recovery_attempt": {
     "version_id": "370097607",
     "url": "https://www.kaggle.com/code/bcau2025/unigdnetr-full-experiment-gpu?scriptVersionId=370097607",
@@ -80,5 +83,6 @@
     "andrewmvd/liver-tumor-segmentation": 5,
     "andrewmvd/liver-tumor-segmentation-part-2": 2,
     "samdazel/automated-cardiac-diagnosis-challenge-miccai17": 2
-  }
+  },
+  "published_recovery_source_version": "369935019"
 }

@@ -1,8 +1,8 @@
 {
   ".gitignore": "292bfaa893e6bf6b4db5c4257560c969fbf4061d35519979d7068f3bb5b06095",
-  "EXPERIMENT_PROGRESS.md": "2fbc9ff9f397d1c2d5cccb00246d857361282e9c0e4988ac03eb7b7ce6051e63",
+  "EXPERIMENT_PROGRESS.md": "19e147f7ebdc162fcc279422bd2fdc74a1cbac4dc9ef26985c06654e4e15913e",
   "README.md": "c38123f443e26a996d4fd2120e6ccdc20f699ddd185895bcb6dd6dd673c9165c",
-  "RECOVERY_NOTES.md": "b84f40423e9142f294dda93045dc2f2674d34cb88380b707ae9b4ea355c10487",
+  "RECOVERY_NOTES.md": "b40c425bdde3a14d1a6c419a608c7414d80fbaa30567fa5b78cb66a19d1f63a3",
   "brats_repair_sources.json": "4142a7f9116b961185647e2418cf20de8e15d65bb44793b55c6fbf680e14991d",
   "notebooks/02_UniGDNetR_TRAIN_RAM_Fixed.ipynb": "ce296301d1de7b12c35970203201e63ccdbd1ba7d399d97653a5f2c207d47f95",
   "notebooks/UniGDNetR_Kaggle_Full_Experiment.ipynb": "276c7952d3470e321ec81e3d816050f57f4bfb1ba0ec7b7854d495ab91b7870e",
@@ -13,6 +13,6 @@
   "scripts/recovery_runtime.py": "d127f273b14f28bdbfd2377b80a2f8633b79fb389c78f826fe49b0e9ea36d946",
   "scripts/repair_brats.py": "446e38dec358f55c613c743168fc432f75c7e7db61a269a88c2d91135c77b89c",
   "scripts/sync_results.py": "1f60869e8a77d545d245a8351399d5b894edb9e04ef667e8df8f86f6dce6d309",
-  "setup_manifest.json": "04c5b4107334b6253bd48b7716a8f0fa7b0730431973989d83761684522a7dd3",
+  "setup_manifest.json": "4039a3e80b355255fa177255c8ed005b4ae7b08c19b72ef0128b54de6656dbc6",
   "tests/test_content_provenance.py": "19b11762fb3c40cf1c6a49fbaa4e8e230e0fea10f8fd774bb081ecedb718bfdb"
 }

@@ -53,3 +53,16 @@ A content-based recovery correction has passed local tests and exact comparison 
 Live logs verified the exact 41 original V2 recovery artifacts at 63.4 seconds, all 15 repaired files, and the integrity audit of 1,582 records/5,335 image-mask combinations at 148.4 seconds. At 237.5 seconds, the new source content audit reached **400/6,917 files (5.8%)**. It is reading actual bytes, not rebuilding slice indices. The full checksum audit, explicit migration and checkpoint acceptance are still pending; **training resume has not yet been verified**.
 
 Last verified log observation: 16 November 2026 around 03:31 UTC (08:31 Asia/Tashkent). Original V2 checkpoints remain preserved. Zero training runs and no final held-out evaluation are complete. The ten-hour session budget is a checkpoint pause limit, not a study completion estimate.
+
+## Version 4 — checkpoint recovery verified
+
+On 16 November 2026 around 04:07 UTC (09:07 Asia/Tashkent), Version 4 remained running with one active Kaggle event. Live logs establish the following milestones:
+
+- 1,848.1 seconds: full SHA-256 source audit completed, **6,917/6,917 files (100%)**.
+- 1,852.1 seconds: explicit V2 content migration and persistent provenance verified; original checkpoint bytes retained. New content fingerprint: `e8ab1ec322826bd08a468e7d17ad4fe60858b1c5f8467e770c5e5dc671394cb6`.
+- Preparation verified with all nine fingerprint-matched cached indices reused; no slice-index rebuild.
+- GPU preflight passed for all three tasks.
+- 1,871.9 seconds: recovery header accepted (format 2, validation, epoch index 2, batch 0); log explicitly reports `RESUMED UniGDNetR/seed13 after training epoch 3; training will not repeat and validation will restart.`
+- Latest observed progress: **run 1/21, UniGDNetR seed 13, epoch 3/40, validation 250/567 (44.1%)**, at session second 2,272.6. This validates recovery; it is not completion of epoch 3 or a trained model.
+
+No job was restarted, cancelled, edited or duplicated during this check. No new epoch score or final held-out metric is claimed. Original V2 output remains the trusted published recovery source until Version 4 ends and its saved checkpoints, status and provenance are verified. The study remains **0/21 completed training runs**. There is no supported full-study finish estimate; task-dependent validation throughput varies substantially.

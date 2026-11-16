@@ -15,3 +15,7 @@ Local validation: timestamp/mount invariance, changed-content rejection, corrupt
 ## Live verification in progress
 
 Version 4 (`370110745`), “V2 recovery with verified content provenance”, is running on GPU T4 x2 with exactly one prior notebook output. At 63.4 seconds it verified the exact 41-artifact V2 set before source hashing. At 148.4 seconds the integrity audit passed for 1,582 records and 5,335 image-mask pairs. At 237.5 seconds the full content audit reached 400/6,917 files (5.8%). The audit, migration receipt, cached index reuse and original checkpoint acceptance must all be verified before claiming training resumed. V2 remains the trusted recovery source until a compatible successor publishes its saved output.
+
+## Live checkpoint recovery verified
+
+Version 4 logs completed the full 6,917-file content audit at 1,848.1 seconds and verified explicit migration/provenance at 1,852.1 seconds. All nine matching indices were reused. At 1,871.9 seconds the original V2 checkpoint was accepted and epoch-3 validation resumed without repeating its training. This verifies live recovery, while publication of Version 4 recovery outputs remains pending until the session ends. See the dated progress report for current phase and study completion status.
