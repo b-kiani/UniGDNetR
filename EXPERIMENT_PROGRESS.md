@@ -137,3 +137,12 @@ Signed-in Kaggle logs confirm **Version 5 (370300234) remains running**, run **1
 Epoch 7 began normally and reached **225/2,500 training batches (9%)** at second **6,981.9**. Working recovery saves were logged at second 5,814.8 (epoch 7, phase train, batch 0, epoch completed) and **6,421.9** (epoch 7, phase train, batch **99**, time interval). These are active working-directory saves; published V5 output has not yet been verified. **V4 remains the latest trusted published recovery source.** No healthy job was edited, cancelled, restarted or duplicated. Kaggle and GitHub access both worked during this check.
 
 Still **0/21 completed models** and **no held-out results**. The CSV now includes the rounded provisional epoch-6 validation score, not a test metric. No reliable full-study finish estimate is available. Evaluation remains blocked by the documented CUDA/real-volume/calibration/scenario and live recovery gates in EVALUATION_READINESS.md. No unchanged local tests were rerun and no evaluation or duplicate GPU job was launched.
+
+
+## Version 5 — epoch 7 improved, epoch 8 training — 2026-11-17 00:39 Asia/Tashkent
+
+Live signed-in Kaggle logs confirm **Version 5 (370300234) remains running**, run **1/21, UniGDNetR seed 13**. Epoch 7 completed at session second **18,168.0**, with provisional validation macro Dice **0.14660**, improved best **0.14660**, bad_epochs **0**. The preceding best was 0.13780 at epoch 5; epoch 6 was 0.13447. The log reports epoch-7 duration **03:25:52**. This is measured epoch throughput, not a reliable full-study finish estimate.
+
+Epoch 8 training reached **825/2,500 batches (33%)** at second **20,692.5**. A working recovery checkpoint was logged at second **20,613.2**, phase train, epoch 8, batch **795**, reason time interval. V5 was running for 20,895.6 seconds when observed. These active working-directory saves are not yet independently verified published output. **V4 remains the latest trusted published recovery source**, with V2 preserved as historical backup. The healthy job was not edited, cancelled, restarted or duplicated.
+
+Still **0/21 completed models** and **no held-out results**. The CSV now includes the rounded epoch-7 provisional validation score. Kaggle logs and GitHub reports were accessible. Evaluation remains blocked by its documented CUDA/real-volume/calibration/scenario and live recovery gates, and by the requirement for all 21 compatible completed models. No unchanged passing local tests were rerun and no evaluation job was launched.
