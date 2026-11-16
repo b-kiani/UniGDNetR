@@ -128,3 +128,12 @@ Live signed-in logs for **Version 5 (370300234)** establish successful continuat
 - 2,360.9 seconds: strict recovery header accepted, format 2, phase validation, epoch_index 5, batch 0, saved 2026-11-16T13:12:33Z. The log explicitly reports **RESUMED UniGDNetR/seed13 after training epoch 6; training will not repeat and validation will restart.**
 
 Latest observed: **run 1/21, UniGDNetR seed 13, epoch 6 validation 325/567 (57.3%)**, second 3,546.6. V5 remains running; its operational session cap is 9 hours. V4 remains the latest trusted published output until V5 ends and publication is independently verified. No active job was changed or duplicated during this check. There is no new completed epoch score, completed model or held-out result: **0/21 completed models**, no reliable full-study finish estimate. Evaluation remains blocked pending the documented remaining gates.
+
+
+## Version 5 — epoch 6 completed, epoch 7 training — 2026-11-16T15:47:32Z
+
+Signed-in Kaggle logs confirm **Version 5 (370300234) remains running**, run **1/21, UniGDNetR seed 13**. Epoch 6 validation completed **567/567 batches** at session second **5,814.6**. At second **5,814.8**, the log reports provisional validation macro Dice **0.13447**, best **0.13780** (epoch 5), improved False and bad_epochs 1. The reported epoch duration is 03:00:47; it spans resumed work and is not an estimate for the full study. Epoch-6 training was preserved from V4 and was not repeated.
+
+Epoch 7 began normally and reached **225/2,500 training batches (9%)** at second **6,981.9**. Working recovery saves were logged at second 5,814.8 (epoch 7, phase train, batch 0, epoch completed) and **6,421.9** (epoch 7, phase train, batch **99**, time interval). These are active working-directory saves; published V5 output has not yet been verified. **V4 remains the latest trusted published recovery source.** No healthy job was edited, cancelled, restarted or duplicated. Kaggle and GitHub access both worked during this check.
+
+Still **0/21 completed models** and **no held-out results**. The CSV now includes the rounded provisional epoch-6 validation score, not a test metric. No reliable full-study finish estimate is available. Evaluation remains blocked by the documented CUDA/real-volume/calibration/scenario and live recovery gates in EVALUATION_READINESS.md. No unchanged local tests were rerun and no evaluation or duplicate GPU job was launched.
