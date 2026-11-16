@@ -29,7 +29,7 @@
     "reason": "10 zero-byte files in the BraTS mirror affecting three scans"
   },
   "repair_source_manifest": "brats_repair_sources.json",
-  "github_transfer_complete": false,
+  "github_transfer_complete": true,
   "repair_verification": {
     "state": "passed_in_kaggle",
     "files": 15,
@@ -42,9 +42,10 @@
   "current_saved_run": {
     "version_id": "370097607",
     "url": "https://www.kaggle.com/code/bcau2025/unigdnetr-full-experiment-gpu?scriptVersionId=370097607",
-    "state": "running",
-    "stage_at_last_check": "previous output restored; repair verification passed; CUDA active",
-    "session_soft_budget_hours": 10
+    "state": "cancelled_during_preparation",
+    "stage_at_last_check": "fingerprint mismatch; checkpoint resume unverified",
+    "session_soft_budget_hours": 10,
+    "dataset_fingerprint_observed": "2b915d23dfe11c20fca2947abc78a66685bbfcb923402edb15f6a99d0e2db50d"
   },
   "github_uploaded_files": [
     ".gitignore",
@@ -64,5 +65,6 @@
     "validation_last_logged_batch": 500,
     "validation_batches_total": 567
   },
-  "github_transfer_note": "Full source archive, runnable notebook and progress report prepared for browser upload; verify remote commit."
+  "github_transfer_note": "Source archive, runnable notebook, repair manifest, progress report and provisional validation CSV verified in the public repository.",
+  "recovery_blocker": "Dataset fingerprint differs after restoring V2 output; no compatibility bypass authorized or performed."
 }
