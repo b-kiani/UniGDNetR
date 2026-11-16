@@ -78,3 +78,9 @@ On 16 November 2026, the live log at session second4,545.3 completed epoch3 with
 This is still run1/21 (UniGDNetR, seed13), with **0/21 completed models** and no held-out evaluation. `provisional_validation.csv` now includes the rounded live epoch3 validation value. No full-study finish estimate is supported by the current variable throughput.
 
 A guarded Kaggle evaluation **candidate**, not an approved production evaluator, has been generated from the recovered Stage3 source and current RAM-fixed Kaggle preparation. Six local tests passed: exact prediction buffer equivalence/cleanup, sampled and unsampled ECE agreement, invalid/incomplete buffer rejection, execution-gate rejection/code parsing, synthetic orientation/resampling/normalisation equivalence, and unchanged absent-class/HD95 spacing conventions. See `EVALUATION_READINESS.md` for remaining gates. No additional Kaggle job was created and the active training source was not edited.
+
+## Progress check and evaluation preparation — 2026-11-16T05:43:42+00:00
+
+Version4 remained running on run1/21, UniGDNetR seed13, epoch4. Latest observed training heartbeat: **750/2,500 batches (30.0%)**, session second8,112.5; a working recovery checkpoint was logged at second7,717.6, epoch4 batch681. No failure was observed. The published recovery source remains V2 until V4 ends and its output is verified. Still0/21 completed models and no final held-out results. No training edit, restart, cancellation or duplicate job occurred.
+
+The blocked evaluation candidate now adds exact held-out matrix/absence checks, patient leakage rejection, disk reservation, per-case metric/RNG recovery, stable checkpoint-content cache identity and pause-safe completion markers. Fifteen evaluation tests plus one export integration test pass locally. These are synthetic/local software checks, not medical test results. PyTorch/CUDA and live recovery/memory validation remain pending; see EVALUATION_READINESS.md.

@@ -43,11 +43,11 @@
     "version_id": "370110745",
     "url": "https://www.kaggle.com/code/bcau2025/unigdnetr-full-experiment-gpu?scriptVersionId=370110745",
     "state": "running_resumed_validation",
-    "stage_at_last_check": "run1/21 seed13 epoch4 training100/2500; working recovery checkpoint batch99 logged",
+    "stage_at_last_check": "run1/21 seed13 epoch4 training750/2500 (30%); working checkpoint batch681 logged",
     "session_soft_budget_hours": 10,
     "dataset_fingerprint_observed": "e8ab1ec322826bd08a468e7d17ad4fe60858b1c5f8467e770c5e5dc671394cb6",
     "checkpoint_resume_verified": true,
-    "last_observed_log_seconds": 5244.8
+    "last_observed_log_seconds": 8112.5
   },
   "github_uploaded_files": [
     ".gitignore",
@@ -93,6 +93,7 @@
     "source_bytes": 182571,
     "readiness_report": "EVALUATION_READINESS.md",
     "candidate": "UniGDNetR_Kaggle_Evaluation_CANDIDATE.ipynb",
-    "local_tests_passed": 6
+    "local_tests_passed": 15,
+    "export_test_passed": true
   }
 }
