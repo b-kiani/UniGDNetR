@@ -1,7 +1,7 @@
 {
   ".gitignore": "292bfaa893e6bf6b4db5c4257560c969fbf4061d35519979d7068f3bb5b06095",
   "EVALUATION_READINESS.md": "d106f1a5ec105e828f438e138b977be5b7e057b4a1422b1e18a23d47a6e6a6b7",
-  "EXPERIMENT_PROGRESS.md": "3949b671c2f16fa03faf1f2f86fcf422ccef99c74e08c037e7989a42466b4397",
+  "EXPERIMENT_PROGRESS.md": "29cc2e3e87134460a4c99d7fb82ecfd1ebdec3c795375af634a5caa56f600dbe",
   "README.md": "106666706cfd06afbd94808390beaa3eb77d540bac8454e20496e507a46ecdd6",
   "RECOVERY_NOTES.md": "b40c425bdde3a14d1a6c419a608c7414d80fbaa30567fa5b78cb66a19d1f63a3",
   "brats_repair_sources.json": "4142a7f9116b961185647e2418cf20de8e15d65bb44793b55c6fbf680e14991d",
@@ -33,5 +33,6 @@
   "tests/test_evaluation_guardrails.py": "33dd7985a122605791e70858cc25400982e808b2833d01a2573191918fe566d6",
   "tests/test_evaluation_memory.py": "271142af6eb62a157d5a994ab6fe9dbea4b79b7d788facc13e8a5c899398f325",
   "tests/test_evaluation_neural.py": "d063be9686d8e7ded0d0418e779e6c969500afce85f79704b46e87922b18d5ae",
-  "tests/test_result_export.py": "59cf00e8ed0f40a7101f5caf56859bdca91e8bf9c1c38e9b08f27c88ec93cff3"
+  "tests/test_result_export.py": "59cf00e8ed0f40a7101f5caf56859bdca91e8bf9c1c38e9b08f27c88ec93cff3",
+  "recovery_verification_v4.json": "a76ed24fe07a8d29adde60edcf75002b4ae1e4d1bda3792ed5acfba9ba0c3767"
 }

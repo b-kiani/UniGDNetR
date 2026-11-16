@@ -1,0 +1,78 @@
+{
+  "verified_utc": "2026-11-16T13:53:12.063035+00:00",
+  "source_script_version": "370110745",
+  "source_output_url": "https://www.kaggle.com/code/bcau2025/unigdnetr-full-experiment-gpu/output?scriptVersionId=370110745",
+  "zip_files": 53,
+  "zip_integrity_passed": true,
+  "session": {
+    "state": "paused",
+    "pipeline_revision": "2026-10-25-brats-schema-rc-longitudinal-v7",
+    "dataset_fingerprint": "e8ab1ec322826bd08a468e7d17ad4fe60858b1c5f8467e770c5e5dc671394cb6",
+    "sources": [
+      "aiocta/brats2023-part-1",
+      "aiocta/brats2023-part-2zip",
+      "andrewmvd/liver-tumor-segmentation",
+      "andrewmvd/liver-tumor-segmentation-part-2",
+      "samdazel/automated-cardiac-diagnosis-challenge-miccai17"
+    ],
+    "elapsed_hours": 10.001394003977499,
+    "final_test_evaluation_complete": false,
+    "saved_utc": "2026-11-16T13:27:02Z"
+  },
+  "recovery_status": {
+    "experiment": "UniGDNetR",
+    "seed": 13,
+    "phase": "validation",
+    "epoch_human": 6,
+    "epochs_total": 40,
+    "batch": 0,
+    "batches_total": 2500,
+    "batches_consumed_by_task": {},
+    "saved_utc": "2026-11-16T13:12:33Z",
+    "reason": "training phase completed",
+    "checkpoint": "/kaggle/working/UniGDNetR/checkpoints/UniGDNetR_seed13_resume.pt"
+  },
+  "checks": {
+    "checkpoint_load_cpu": true,
+    "model_ema_finite": true,
+    "history_epochs": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "optimizer_scheduler_scaler_rng_pending_training_present": true,
+    "baseline_migration_digest_matches": true,
+    "anchored_splits_repairs_pairing_audit_match": true,
+    "content_provenance_file_count": 6917
+  },
+  "artifacts": {
+    "checkpoints/UniGDNetR_seed13_resume.pt": {
+      "bytes": 20143417,
+      "sha256": "2cc78d3450ea0071126f47ad5570a710932b1cb987a3c829c6f0973ea5b10f9b"
+    },
+    "checkpoints/UniGDNetR_seed13_resume_status.json": {
+      "bytes": 348,
+      "sha256": "d62449050ae520b77f9e8517ecf17d8b95f7e1280194bddb04a243b5e97a47e1"
+    },
+    "logs/UniGDNetR_seed13_history.csv": {
+      "bytes": 1685,
+      "sha256": "a843e2daf0543285f6deae0bfa1c5cb2878218527bc32c1730087e4c3ef84645"
+    },
+    "manifests/content_provenance.json": {
+      "bytes": 2009880,
+      "sha256": "61842223c9a1ac3589950d13fec4bb98d1f1836ec90f72e279282c55cba69c96"
+    },
+    "manifests/legacy_v2_content_migration.json": {
+      "bytes": 950,
+      "sha256": "2b39c463d2c461cd15c59973800c14db6444d842737f6d1c44fde8eaa348c5af"
+    },
+    "manifests/unigdnetr_kaggle_session.json": {
+      "bytes": 544,
+      "sha256": "a04906f0ab1e73b78692266bc688996cb9852b08b769626d4332c19526dcd72a"
+    }
+  },
+  "completed_models": 0,
+  "held_out_evaluation_complete": false
+}
