@@ -70,3 +70,11 @@ No job was restarted, cancelled, edited or duplicated during this check. No new 
 ## Finalization preparation — original Stage 3 recovered
 
 The existing `03_UniGDNetR_EVALUATE(2).ipynb` was found and read in full on 16 November 2026. The earlier missing-evaluator dependency is resolved. `EVALUATION_READINESS.md` records its provenance, checked source structure, numerical conventions and remaining Kaggle adaptation/memory/coverage gates. All code cells parse, with no stored outputs; this is not a successful evaluation. Current live Version 4 remains on run 1/21, UniGDNetR seed13, epoch3 validation; latest observed 525/567 batches (92.6%), session second3916.1. No additional GPU job was started. All21 completed models and validated held-out results remain required.
+
+## Version 4 — epoch 3 complete, epoch 4 training
+
+On 16 November 2026, the live log at session second4,545.3 completed epoch3 with provisional validation macro Dice **0.10908**, improved best0.10908 and bad_epochs0. Epoch4 then started. Latest observed training heartbeat: **100/2,500 batches (4.0%)**, session second5,244.8. A recovery checkpoint was saved at second5,244.6, phase train, epoch4, batch99, reason time interval. This is a logged working-directory save; published output remains pending until the session ends. V2 remains the preserved trusted published recovery source.
+
+This is still run1/21 (UniGDNetR, seed13), with **0/21 completed models** and no held-out evaluation. `provisional_validation.csv` now includes the rounded live epoch3 validation value. No full-study finish estimate is supported by the current variable throughput.
+
+A guarded Kaggle evaluation **candidate**, not an approved production evaluator, has been generated from the recovered Stage3 source and current RAM-fixed Kaggle preparation. Six local tests passed: exact prediction buffer equivalence/cleanup, sampled and unsampled ECE agreement, invalid/incomplete buffer rejection, execution-gate rejection/code parsing, synthetic orientation/resampling/normalisation equivalence, and unchanged absent-class/HD95 spacing conventions. See `EVALUATION_READINESS.md` for remaining gates. No additional Kaggle job was created and the active training source was not edited.

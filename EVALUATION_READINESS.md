@@ -41,3 +41,13 @@ The saved `03_UniGDNetR_EVALUATE(2).ipynb` was located and read in full from the
 - Small derived reports in GitHub; raw volumes, full voxel predictions, checkpoints, credentials and lock files remain outside GitHub.
 
 A final evaluation completion marker alone is insufficient: independently check the expected matrix and coverage before publication. All training, held-out evaluation and report consistency gates must pass before describing the study as finalized.
+
+## Evaluation candidate prepared — local validation only
+
+`UniGDNetR_Kaggle_Evaluation_CANDIDATE.ipynb` and `scripts/build_evaluation_candidate.py` reuse the current Kaggle preparation, bounded Stage2 cache, architecture and checkpoint metadata guards. All21 completed compatible checkpoints remain required. The candidate refuses execution by default; approval must follow the remaining validation, not merely setting an environment variable. The active training notebook has not been changed.
+
+`evaluation_buffers.py` stores prediction probabilities, entropy and labels in temporary memory-mapped files instead of full-volume Python lists plus stacked copies. It verifies every slice was written once and cleans up temporary files. Chunked ECE preserves the original seed13 voxel sample and bin convention; floating-point summation order can differ slightly.
+
+Six local tests passed with NumPy/SciPy/NIfTI fixtures: disk buffers exactly match original stacked probabilities/entropy/argmax labels; ECE agrees within 1e-6 with and without250,000-voxel sampling; invalid/incomplete/duplicate batches are rejected; code parses and unapproved execution is refused; the RAM-fixed loader matches original orientation/resampling and CT normalisation within1e-7; original absent-class and anisotropic HD95 conventions are preserved. Tests initially needed missing fixture globals, which were supplied before the passing run.
+
+**Still pending:** neural inference equivalence on a PyTorch-enabled runtime (PyTorch is absent from this local runtime); high-volume distance-transform/region-mask memory profiling and disk capacity checks; deterministic MC-dropout/scenario testing; complete case/region/seed coverage checks; efficient per-case/session recovery for long evaluation jobs; and a live Kaggle preflight after all21 models finish. The candidate is not approved and no held-out evaluation has run. The existing completion marker cannot substitute for these checks.
