@@ -1,0 +1,96 @@
+{
+  "repo_id": "MedOtter/brats2023-gli-dataset",
+  "revision": "b032d353a3e80911a5f850bc54e6fb575298a354",
+  "files": [
+    {
+      "case": "BraTS-GLI-00818-000",
+      "path": "ASNR-MICCAI-BraTS2023-GLI-Challenge-TrainingData/BraTS-GLI-00818-000/BraTS-GLI-00818-000-seg.nii.gz",
+      "size": 60180,
+      "sha256": "7a6f3090c071ea67fb4baeec2eb2bba60a2689b6aaf1d29c367d30a16cec3b51"
+    },
+    {
+      "case": "BraTS-GLI-00818-000",
+      "path": "ASNR-MICCAI-BraTS2023-GLI-Challenge-TrainingData/BraTS-GLI-00818-000/BraTS-GLI-00818-000-t1c.nii.gz",
+      "size": 5807271,
+      "sha256": "8053379e6cfdef32f9c5480966fd1124afb0405c9f8a3b8f452b99cdb3c0f3c3"
+    },
+    {
+      "case": "BraTS-GLI-00818-000",
+      "path": "ASNR-MICCAI-BraTS2023-GLI-Challenge-TrainingData/BraTS-GLI-00818-000/BraTS-GLI-00818-000-t1n.nii.gz",
+      "size": 5865819,
+      "sha256": "4a861b69b0950e23cfd9e6ca91cc8574b0b15bcda1bdee5f8fdf79f7ddded78f"
+    },
+    {
+      "case": "BraTS-GLI-00818-000",
+      "path": "ASNR-MICCAI-BraTS2023-GLI-Challenge-TrainingData/BraTS-GLI-00818-000/BraTS-GLI-00818-000-t2f.nii.gz",
+      "size": 5856321,
+      "sha256": "8de244997d5b83bd75a3dc3e1a7cd61f0b885518b29d5216bce7759b7ec61d4e"
+    },
+    {
+      "case": "BraTS-GLI-00818-000",
+      "path": "ASNR-MICCAI-BraTS2023-GLI-Challenge-TrainingData/BraTS-GLI-00818-000/BraTS-GLI-00818-000-t2w.nii.gz",
+      "size": 5968628,
+      "sha256": "69c40f321b10f3b1961aa2f2cc5d6af029214ea3e3a0212a40d9d80f95d11daa"
+    },
+    {
+      "case": "BraTS-GLI-01462-000",
+      "path": "ASNR-MICCAI-BraTS2023-GLI-Challenge-TrainingData/BraTS-GLI-01462-000/BraTS-GLI-01462-000-seg.nii.gz",
+      "size": 64284,
+      "sha256": "ad390c22f0db6195d7093b1f44090308cee01ceac696916cf5eb49efb3dfa58f"
+    },
+    {
+      "case": "BraTS-GLI-01462-000",
+      "path": "ASNR-MICCAI-BraTS2023-GLI-Challenge-TrainingData/BraTS-GLI-01462-000/BraTS-GLI-01462-000-t1c.nii.gz",
+      "size": 1895113,
+      "sha256": "dc35a79f78063e7a07a09f78e56a9bb0d3f9290d923209a1fc38fb1d4509f037"
+    },
+    {
+      "case": "BraTS-GLI-01462-000",
+      "path": "ASNR-MICCAI-BraTS2023-GLI-Challenge-TrainingData/BraTS-GLI-01462-000/BraTS-GLI-01462-000-t1n.nii.gz",
+      "size": 2411583,
+      "sha256": "d86a10fd90b645ae05f0a0b4a217d0795bf7c813d964bf6a61f0a18e3265bedf"
+    },
+    {
+      "case": "BraTS-GLI-01462-000",
+      "path": "ASNR-MICCAI-BraTS2023-GLI-Challenge-TrainingData/BraTS-GLI-01462-000/BraTS-GLI-01462-000-t2f.nii.gz",
+      "size": 2250291,
+      "sha256": "81150a859f9820382b3cfa3a784b218c3c6419df770da437aef57dcb233f4628"
+    },
+    {
+      "case": "BraTS-GLI-01462-000",
+      "path": "ASNR-MICCAI-BraTS2023-GLI-Challenge-TrainingData/BraTS-GLI-01462-000/BraTS-GLI-01462-000-t2w.nii.gz",
+      "size": 2504264,
+      "sha256": "c1896c4adc7c4f8a95c619dae94488b86127a57891e9d26705889222643f65d8"
+    },
+    {
+      "case": "BraTS-GLI-01486-000",
+      "path": "ASNR-MICCAI-BraTS2023-GLI-Challenge-TrainingData/BraTS-GLI-01486-000/BraTS-GLI-01486-000-seg.nii.gz",
+      "size": 61054,
+      "sha256": "356e81c6d5c6d0841135fed0791bc1dd7336d6e76ef7caaf64e973be95e1a394"
+    },
+    {
+      "case": "BraTS-GLI-01486-000",
+      "path": "ASNR-MICCAI-BraTS2023-GLI-Challenge-TrainingData/BraTS-GLI-01486-000/BraTS-GLI-01486-000-t1c.nii.gz",
+      "size": 1969685,
+      "sha256": "09cfe161b16614ef99d50230281037d348ad9d7fe130c725b4e4d131fa325099"
+    },
+    {
+      "case": "BraTS-GLI-01486-000",
+      "path": "ASNR-MICCAI-BraTS2023-GLI-Challenge-TrainingData/BraTS-GLI-01486-000/BraTS-GLI-01486-000-t1n.nii.gz",
+      "size": 1911513,
+      "sha256": "7bcdccbd7667c84bcfe0ebd12b94e26566abede1e42bc785dc5b4bbb53dbda90"
+    },
+    {
+      "case": "BraTS-GLI-01486-000",
+      "path": "ASNR-MICCAI-BraTS2023-GLI-Challenge-TrainingData/BraTS-GLI-01486-000/BraTS-GLI-01486-000-t2f.nii.gz",
+      "size": 2052923,
+      "sha256": "d66184f89701a7b5ae425ccc756c8b20cce846de4a4a2d2cf60d312900938523"
+    },
+    {
+      "case": "BraTS-GLI-01486-000",
+      "path": "ASNR-MICCAI-BraTS2023-GLI-Challenge-TrainingData/BraTS-GLI-01486-000/BraTS-GLI-01486-000-t2w.nii.gz",
+      "size": 2080354,
+      "sha256": "7b0a362a6efb6898066c265c84ce51eefcba0caf22b202ebe45eb1bf8b308cb2"
+    }
+  ]
+}

@@ -22,5 +22,47 @@
     }
   },
   "training_complete": false,
-  "held_out_evaluation_complete": false
+  "held_out_evaluation_complete": false,
+  "first_saved_run": {
+    "version_id": "369927716",
+    "state": "failed_before_training",
+    "reason": "10 zero-byte files in the BraTS mirror affecting three scans"
+  },
+  "repair_source_manifest": "brats_repair_sources.json",
+  "github_transfer_complete": false,
+  "repair_verification": {
+    "state": "passed_in_kaggle",
+    "files": 15,
+    "affected_scans": 3,
+    "original_empty_files": 10,
+    "remaining_nonempty_original_files_match": true,
+    "pinned_hf_revision": "b032d353a3e80911a5f850bc54e6fb575298a354"
+  },
+  "header_audit": "passed_in_kaggle",
+  "current_saved_run": {
+    "version_id": "370097607",
+    "url": "https://www.kaggle.com/code/bcau2025/unigdnetr-full-experiment-gpu?scriptVersionId=370097607",
+    "state": "running",
+    "stage_at_last_check": "previous output restored; repair verification passed; CUDA active",
+    "session_soft_budget_hours": 10
+  },
+  "github_uploaded_files": [
+    ".gitignore",
+    "README.md",
+    "scripts/build_kaggle.py",
+    "setup_manifest.json"
+  ],
+  "automatic_result_sync_active": false,
+  "updated_utc_date": "2026-11-16",
+  "previous_saved_run": {
+    "version_id": "369935019",
+    "state": "paused",
+    "saved_utc": "2026-11-16T01:17:19Z",
+    "epoch": 3,
+    "phase": "validation",
+    "resume_batch": 0,
+    "validation_last_logged_batch": 500,
+    "validation_batches_total": 567
+  },
+  "github_transfer_note": "Full source archive, runnable notebook and progress report prepared for browser upload; verify remote commit."
 }
