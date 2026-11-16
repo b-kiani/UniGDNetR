@@ -22,6 +22,9 @@ allowed = {
     "results": None,
 }
 extensions = {".csv", ".json", ".png", ".svg", ".pdf", ".xlsx"}
+private_parts = {"evaluation_case_cache", "evaluation_cache", "locks", "recovery_locks",
+                 "checkpoints", "data_repairs"}
+private_names = {"kaggle.json", "credentials.json", "token.json", "tokens.json", "secrets.json"}
 exports = []
 for sub, names in allowed.items():
     folder = src / sub
@@ -29,6 +32,9 @@ for sub, names in allowed.items():
         continue
     for p in sorted(folder.rglob("*")):
         if not p.is_file() or p.is_symlink() or src not in p.resolve().parents:
+            continue
+        relative = p.relative_to(src)
+        if private_parts.intersection(part.lower() for part in relative.parts) or p.name.lower() in private_names:
             continue
         if p.suffix.lower() not in extensions or p.stat().st_size > 10 * 1024**2:
             continue
