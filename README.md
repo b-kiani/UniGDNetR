@@ -71,3 +71,7 @@ No background result synchronization is active. Do not store Kaggle API credenti
 ## Content-based recovery correction (16 November 2026)
 
 See `RECOVERY_NOTES.md` for the explicit V2 migration trust boundary and verification. Source versions must be pinned to BraTS 1/1, LiTS 5/2 and ACDC 2. The updated runnable notebook hashes all current source bytes, verifies the exact original recovery artifacts and preserves checkpoint bytes. Future sessions compare saved SHA-256 content provenance. The scientific configuration is unchanged. Live verification is required before claiming resumed training.
+
+## Stage 3 source recovered (16 November 2026)
+
+The previously missing original evaluation notebook has now been located. See `EVALUATION_READINESS.md` for its source provenance, existing metric conventions and mandatory compatibility/memory/coverage checks. The original is included in the source archive as `notebooks/03_UniGDNetR_EVALUATE_original.ipynb` and at the repository root. It has not been executed on Kaggle; the healthy training run continues. Earlier missing-file statements describe the prior state. No final results are available.

@@ -43,11 +43,11 @@
     "version_id": "370110745",
     "url": "https://www.kaggle.com/code/bcau2025/unigdnetr-full-experiment-gpu?scriptVersionId=370110745",
     "state": "running_resumed_validation",
-    "stage_at_last_check": "Full content audit and explicit migration verified; checkpoint accepted; epoch3 validation250/567 (44.1%)",
+    "stage_at_last_check": "run1/21 seed13 epoch3 validation525/567 (92.6%)",
     "session_soft_budget_hours": 10,
     "dataset_fingerprint_observed": "e8ab1ec322826bd08a468e7d17ad4fe60858b1c5f8467e770c5e5dc671394cb6",
     "checkpoint_resume_verified": true,
-    "last_observed_log_seconds": 2272.6
+    "last_observed_log_seconds": 3916.1
   },
   "github_uploaded_files": [
     ".gitignore",
@@ -84,5 +84,13 @@
     "andrewmvd/liver-tumor-segmentation-part-2": 2,
     "samdazel/automated-cardiac-diagnosis-challenge-miccai17": 2
   },
-  "published_recovery_source_version": "369935019"
+  "published_recovery_source_version": "369935019",
+  "evaluation_source": {
+    "state": "recovered_not_yet_ported_or_executed",
+    "original_filename": "03_UniGDNetR_EVALUATE(2).ipynb",
+    "sha256": "d34591cd0da8d65fff1da459f54dc47a95ab4e773af5fd8f231a3e2f6e3298f9",
+    "source_version": "2",
+    "source_bytes": 182571,
+    "readiness_report": "EVALUATION_READINESS.md"
+  }
 }

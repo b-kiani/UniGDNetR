@@ -66,3 +66,7 @@ On 16 November 2026 around 04:07 UTC (09:07 Asia/Tashkent), Version 4 remained r
 - Latest observed progress: **run 1/21, UniGDNetR seed 13, epoch 3/40, validation 250/567 (44.1%)**, at session second 2,272.6. This validates recovery; it is not completion of epoch 3 or a trained model.
 
 No job was restarted, cancelled, edited or duplicated during this check. No new epoch score or final held-out metric is claimed. Original V2 output remains the trusted published recovery source until Version 4 ends and its saved checkpoints, status and provenance are verified. The study remains **0/21 completed training runs**. There is no supported full-study finish estimate; task-dependent validation throughput varies substantially.
+
+## Finalization preparation — original Stage 3 recovered
+
+The existing `03_UniGDNetR_EVALUATE(2).ipynb` was found and read in full on 16 November 2026. The earlier missing-evaluator dependency is resolved. `EVALUATION_READINESS.md` records its provenance, checked source structure, numerical conventions and remaining Kaggle adaptation/memory/coverage gates. All code cells parse, with no stored outputs; this is not a successful evaluation. Current live Version 4 remains on run 1/21, UniGDNetR seed13, epoch3 validation; latest observed 525/567 batches (92.6%), session second3916.1. No additional GPU job was started. All21 completed models and validated held-out results remain required.
