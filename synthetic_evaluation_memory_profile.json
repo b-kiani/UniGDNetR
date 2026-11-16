@@ -1,0 +1,86 @@
+{
+  "created_utc": "2026-11-16T06:26:28.450147+00:00",
+  "scope": "Local CPU synthetic masks only; no real cohort or GPU equivalence claimed.",
+  "profiles": [
+    {
+      "mode": "original",
+      "scenario": "compact",
+      "synthetic": true,
+      "shape": [
+        192,
+        192,
+        128
+      ],
+      "spacing_mm": [
+        0.7,
+        0.7,
+        3.0
+      ],
+      "hd95": 9.0,
+      "wall_seconds": 0.9729052549955668,
+      "process_peak_rss_mib": 330.21484375,
+      "numpy_version": "2.3.5",
+      "scipy_version": "1.17.0"
+    },
+    {
+      "mode": "candidate",
+      "scenario": "compact",
+      "synthetic": true,
+      "shape": [
+        192,
+        192,
+        128
+      ],
+      "spacing_mm": [
+        0.7,
+        0.7,
+        3.0
+      ],
+      "hd95": 9.0,
+      "wall_seconds": 0.025546763004967943,
+      "process_peak_rss_mib": 54.453125,
+      "numpy_version": "2.3.5",
+      "scipy_version": "1.17.0"
+    },
+    {
+      "mode": "original",
+      "scenario": "broad",
+      "synthetic": true,
+      "shape": [
+        192,
+        192,
+        128
+      ],
+      "spacing_mm": [
+        0.7,
+        0.7,
+        3.0
+      ],
+      "hd95": 3.0,
+      "wall_seconds": 1.435140583998873,
+      "process_peak_rss_mib": 332.72265625,
+      "numpy_version": "2.3.5",
+      "scipy_version": "1.17.0"
+    },
+    {
+      "mode": "candidate",
+      "scenario": "broad",
+      "synthetic": true,
+      "shape": [
+        192,
+        192,
+        128
+      ],
+      "spacing_mm": [
+        0.7,
+        0.7,
+        3.0
+      ],
+      "hd95": 3.0,
+      "wall_seconds": 0.9038919399899896,
+      "process_peak_rss_mib": 287.58203125,
+      "numpy_version": "2.3.5",
+      "scipy_version": "1.17.0"
+    }
+  ]
+}

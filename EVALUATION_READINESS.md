@@ -1,6 +1,6 @@
 # Held-out evaluation readiness — 16 November 2026
 
-**Status: original Stage 3 source recovered; evaluation not run. No final results.**
+**Status: candidate passed local synthetic CPU checks; held-out evaluation has not run. CUDA/real-cohort approval remains pending.**
 
 The saved `03_UniGDNetR_EVALUATE(2).ipynb` was located and read in full from the user's existing files on 16 November. The recovered source is stored as `notebooks/03_UniGDNetR_EVALUATE_original.ipynb` in the source archive and as a convenient repository-root copy. It is the existing Stage 3 source, not a newly invented replacement. The earlier missing-file blocker is resolved. This does not establish compatibility with the Kaggle RAM-fixed training port.
 
@@ -63,3 +63,20 @@ Per-case metrics and post-case RNG state are saved atomically with a content che
 Session budget checks run before each case. A budget pause skips downstream analyses/final completion and records `evaluation_paused`; copied old completion markers are removed from writable output at startup, while the immutable source is preserved. The source training-complete marker is retained, so a later evaluation session can attach the prior evaluation output. Full live evaluation-resume behavior remains to be checked on Kaggle after training.
 
 **15 evaluation tests and one report-export integration test pass locally.** Additional tests cover full-matrix expectations, patient leakage, invalid/partial results, absent-class counts, insufficient disk, interrupted RNG recovery, corrupted cache rejection, stable checkpoint identity and preventing final completion on pause. Runtime case/RNG caches and repeated job caches are excluded from report export. No GPU job was launched or changed. The approval gate remains closed. Remaining work includes GPU/neural/MC equivalence, large-volume HD95/region memory profiling and a live paused/resumed evaluation preflight; the candidate must not be approved merely because these local tests pass.
+
+## Local neural equivalence and memory profile — 16 November 2026
+
+The prior lack of local PyTorch is resolved. An isolated CPU-only installation from the official PyTorch wheel index was pinned to **2.11.0+cpu**, matching the training framework's2.11 release but not its CUDA device/runtime. Active Kaggle training and its environment were not changed.
+
+**21 local evaluation tests passed, with zero failures/errors/skips.** `local_evaluation_test_report.json` records the environment and tested notebook/source hashes. The actual UniGDNetR architecture (base24, embedding48, dropout0.1) was compared against the recovered original inference code on synthetic19×23×5 volumes resized to32×32. Twenty comparisons covered all three task heads; clean MC1/MC8; Gaussian noise, blur, resolution and gamma atMC2; and BraTS single-missing/single-available MRI atMC8. Probabilities, entropy, argmax labels and CPU Torch RNG states matched exactly. A separate CPU dropout test preserved the exact interrupted/resumed random stream. These small synthetic CPU checks do not establish full-size CUDA or real-cohort equivalence.
+
+The HD95 candidate retains the original definition and NaN convention. It crops to the joint foreground bounding box with a one-voxel halo and computes the two directed distance fields sequentially. Random sparse/dense, boundary-touching, hole, singleton and anisotropic fixtures matched the original exactly. Instrumentation confirmed only one distance field is retained. Foreground regions are yielded individually; cached image volumes are released before metric calculation; affine spacing uses the verified header-only canonical geometry.
+
+`synthetic_evaluation_memory_profile.json` records fresh-process local CPU profiles on192×192×128 synthetic masks (NumPy2.3.5, SciPy1.17.0):
+
+| Synthetic foreground | Original process peak RSS (MiB) | Candidate process peak RSS (MiB) | HD95 match |
+| --- | ---: | ---: | --- |
+| Compact | 330.21 | 54.45 | Exact |
+| Broad | 332.72 | 287.58 | Exact |
+
+These are whole-process synthetic peaks, not GPU VRAM or real LiTS memory guarantees. CUDA/MC equivalence and RNG recovery, largest real-volume memory/disk validation, calibration and full scenario/coverage audits, and a live paused/resumed Kaggle evaluation preflight remain mandatory. All21 compatible completed models are still required before held-out execution. The approval gate remains closed. Earlier missing-PyTorch and untested-CPU statements describe the prior state.

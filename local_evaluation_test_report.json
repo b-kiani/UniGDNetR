@@ -1,0 +1,39 @@
+{
+  "created_utc": "2026-11-16T06:36:31.541287+00:00",
+  "scope": "Local synthetic CPU software validation only; no held-out metrics or CUDA approval.",
+  "python": "3.12.14",
+  "torch": "2.11.0+cpu",
+  "cuda_available": false,
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "tests_run": 21,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "successful": true,
+  "neural_fixture": {
+    "base_channels": 24,
+    "task_embedding_dim": 48,
+    "dropout": 0.1,
+    "synthetic_image_size": 32,
+    "volume_shape": [
+      19,
+      23,
+      5
+    ],
+    "comparisons": 20,
+    "tasks": [
+      "brats",
+      "lits",
+      "acdc"
+    ],
+    "mc_samples_tested": [
+      1,
+      2,
+      8
+    ],
+    "limitations": "Synthetic small CPU fixtures. Real-size/cohort CUDA and live session preflight remain required."
+  },
+  "candidate_notebook_sha256": "7938dd36c6ff1d7b9ead51e59dac5d45ab0c5b81eb04cdcaa1f0cd165e38e7c9",
+  "original_evaluation_sha256": "d34591cd0da8d65fff1da459f54dc47a95ab4e773af5fd8f231a3e2f6e3298f9"
+}
