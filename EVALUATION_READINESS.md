@@ -80,3 +80,10 @@ The HD95 candidate retains the original definition and NaN convention. It crops 
 | Broad | 332.72 | 287.58 | Exact |
 
 These are whole-process synthetic peaks, not GPU VRAM or real LiTS memory guarantees. CUDA/MC equivalence and RNG recovery, largest real-volume memory/disk validation, calibration and full scenario/coverage audits, and a live paused/resumed Kaggle evaluation preflight remain mandatory. All21 compatible completed models are still required before held-out execution. The approval gate remains closed. Earlier missing-PyTorch and untested-CPU statements describe the prior state.
+
+
+## Local PC evidence gate — 18 November 2026
+
+The uploaded local `logs.zip` contains the 21 expected histories and 760 sequential epoch rows. All numeric fields are finite; stopping is consistent with the 40-epoch cap or patience 10. See `local_training_history_review_20261118.json` for checks and per-run validation summaries. This is stronger evidence of local training progression than completion JSON alone, but checkpoint bytes, selected checkpoint metadata, historical inputs and execution remain unverified. BraTS slice-validation Dice is very low and needs investigation using training/validation evidence. The stale-or-inconsistent duplicated-T2f pairing audit remains unresolved. Current notebook source rejects duplicates and resamples grids; source inspection does not prove what previously executed.
+
+Hold redundant Kaggle training and held-out evaluation approval while reconciling the local set. Recompute exact patient/case/task/class/seed/scenario coverage from the local cohorts; do not reuse the Kaggle 18,780-row target. Existing evaluator software checks and pending CUDA/real-volume/RNG/calibration/recovery gates remain in force. New raw volumes, voxel predictions, checkpoint weights and runtime RNG must not enter GitHub.

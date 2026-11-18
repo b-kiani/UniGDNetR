@@ -1,17 +1,21 @@
 {
   ".gitignore": "292bfaa893e6bf6b4db5c4257560c969fbf4061d35519979d7068f3bb5b06095",
-  "EVALUATION_READINESS.md": "d106f1a5ec105e828f438e138b977be5b7e057b4a1422b1e18a23d47a6e6a6b7",
-  "EXPERIMENT_PROGRESS.md": "b49fedbcd115a585596e41b8578c34e4d896c3a3c499a729016e2c506d8d2b44",
+  "EVALUATION_READINESS.md": "cf12c18dd3d03d67232cc3d6318d0de20b4713fdaeb68f3df6e25fb02e3f2ddb",
+  "EXPERIMENT_PROGRESS.md": "6d4021932ad362497077a516c683727e1b960c4a61c81d11030aa389a0f47f6f",
   "README.md": "106666706cfd06afbd94808390beaa3eb77d540bac8454e20496e507a46ecdd6",
   "RECOVERY_NOTES.md": "b40c425bdde3a14d1a6c419a608c7414d80fbaa30567fa5b78cb66a19d1f63a3",
   "brats_repair_sources.json": "4142a7f9116b961185647e2418cf20de8e15d65bb44793b55c6fbf680e14991d",
   "local_evaluation_test_report.json": "12d68ec4d9c617e9731653254941fe76372a51d0ccbf74bc466736b4569db784",
+  "local_training_history_review_20261118.json": "08dcaad7e2f0d7b7b71f1b822258fb8efaffaa09e93c2c68b429c825ac063cb9",
+  "local_training_history_summary_20261118.csv": "e43a743c38c32504d6635b4ea5cbc755d97a2645dc178efe15fc52e00e825091",
   "notebooks/02_UniGDNetR_TRAIN_RAM_Fixed.ipynb": "ce296301d1de7b12c35970203201e63ccdbd1ba7d399d97653a5f2c207d47f95",
   "notebooks/03_UniGDNetR_EVALUATE_original.ipynb": "d34591cd0da8d65fff1da459f54dc47a95ab4e773af5fd8f231a3e2f6e3298f9",
   "notebooks/UniGDNetR_Kaggle_Evaluation_CANDIDATE.ipynb": "7938dd36c6ff1d7b9ead51e59dac5d45ab0c5b81eb04cdcaa1f0cd165e38e7c9",
   "notebooks/UniGDNetR_Kaggle_Full_Experiment.ipynb": "276c7952d3470e321ec81e3d816050f57f4bfb1ba0ec7b7854d495ab91b7870e",
   "provisional_validation.csv": "d25419b295cc08f174ded3ee1bc033e78da6801ba9a0515b11ea75cd75dfc13e",
   "recovery_baseline_v2.json": "69bb14a888a9cb9b6709dd527d825e7619b48a1fdda303367a62111fef3838b6",
+  "recovery_verification_v4.json": "a76ed24fe07a8d29adde60edcf75002b4ae1e4d1bda3792ed5acfba9ba0c3767",
+  "recovery_verification_v5.json": "7bbc190cb2b2cb649d50cb4d9112da9f71bb2b1cd6c091c3f375d3f64b1f09c0",
   "scripts/build_evaluation_candidate.py": "e531d1392b0bcff0c7a539df9eb727b5734ab3cd1d1ee346d5441dd27adda491",
   "scripts/build_kaggle.py": "f1ac1e959f5dcd8a454552d5e57f1d648b6c668751906a00467c6ea3a52376c8",
   "scripts/content_provenance.py": "2f6adc6c3f7355f863c810980c026df192289cc1918213cf6f9a8e0ad91bb584",
@@ -33,7 +37,5 @@
   "tests/test_evaluation_guardrails.py": "33dd7985a122605791e70858cc25400982e808b2833d01a2573191918fe566d6",
   "tests/test_evaluation_memory.py": "271142af6eb62a157d5a994ab6fe9dbea4b79b7d788facc13e8a5c899398f325",
   "tests/test_evaluation_neural.py": "d063be9686d8e7ded0d0418e779e6c969500afce85f79704b46e87922b18d5ae",
-  "tests/test_result_export.py": "59cf00e8ed0f40a7101f5caf56859bdca91e8bf9c1c38e9b08f27c88ec93cff3",
-  "recovery_verification_v4.json": "a76ed24fe07a8d29adde60edcf75002b4ae1e4d1bda3792ed5acfba9ba0c3767",
-  "recovery_verification_v5.json": "7bbc190cb2b2cb649d50cb4d9112da9f71bb2b1cd6c091c3f375d3f64b1f09c0"
+  "tests/test_result_export.py": "59cf00e8ed0f40a7101f5caf56859bdca91e8bf9c1c38e9b08f27c88ec93cff3"
 }
