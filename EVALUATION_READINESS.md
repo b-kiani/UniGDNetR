@@ -1,5 +1,10 @@
 # Held-out evaluation readiness — 16 November 2026
 
+## V6 forward progress observed after long pause — 22 November 2026
+
+Subsequent live logs confirm a new epoch-10 working checkpoint at **batch 147, 13,787.4 s**, then training **150/2,500 batches (6%) at 13,796.5 s**. Forward progress has resumed without intervention. This supersedes the immediately preceding possible-stall status, while preserving the observed approximately one-hour log/training gap as a historical event with unknown cause. No restart, cancellation, source edit or duplicate launch occurred. The working checkpoint is not yet published. Epoch 9 best provisional validation macro Dice remains **0.17245**; run 1/21, zero completed Kaggle models and no held-out results. See the subsequent-forward-progress field in [dated evidence](v6_epoch9_result_20261122.json).
+
+
 ## V6 epoch 9 result and log-freshness concern — 22 November 2026
 
 Epoch 9 completed at **9,448.3 s**, provisional macro validation Dice **0.17245**, best **0.17245**, improved=True, bad_epochs=0 (previous best 0.15813). Epoch 10 began immediately. Latest observed training is **125/2,500 batches (5%) at 10,195.2 s**; the most recent working checkpoint was logged at epoch 10 batch 99 at 10,159.6 s. These working files have not been published or independently inspected. The new row in `provisional_validation.csv` is internal slice-validation evidence, not a volumetric held-out score or completed model.

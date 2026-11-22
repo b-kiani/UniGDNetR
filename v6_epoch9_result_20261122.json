@@ -39,5 +39,16 @@
   "trusted_published_recovery_version": 370300234,
   "completed_kaggle_models": 0,
   "held_out_approved": false,
-  "job_modified": false
+  "job_modified": false,
+  "subsequent_forward_progress": {
+    "checkpoint_log_seconds": 13787.4,
+    "checkpoint_epoch": 10,
+    "checkpoint_batch": 147,
+    "training_log_seconds": 13796.5,
+    "training_batch": 150,
+    "percent": 6,
+    "cause_of_long_pause": "unknown",
+    "intervention": false,
+    "published_checkpoint": false
+  }
 }
