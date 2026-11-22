@@ -1,0 +1,91 @@
+{
+  "observed_at_utc": "2026-11-22T17:49:35.770513+00:00",
+  "version": 372675512,
+  "status": "running",
+  "recovery_verified": true,
+  "source_byte_audit": {
+    "files": 6917,
+    "completed_log_seconds": 1951.0,
+    "provenance_verified_log_seconds": 1951.3,
+    "fingerprint": "e8ab1ec322826bd08a468e7d17ad4fe60858b1c5f8467e770c5e5dc671394cb6"
+  },
+  "indices_reused": 9,
+  "indices_reuse_log_seconds": [
+    1954.4,
+    1957.0
+  ],
+  "cuda_preflight_passed": [
+    "brats",
+    "lits",
+    "acdc"
+  ],
+  "cuda_preflight_log_seconds": [
+    1964.6,
+    1964.8
+  ],
+  "recovery_header": {
+    "accepted_log_seconds": 1971.8,
+    "format": 2,
+    "phase": "train",
+    "epoch_index": 10,
+    "batch": 1887,
+    "saved_utc": "2026-11-22T15:54:50Z"
+  },
+  "explicit_resume_log_seconds": 1971.8,
+  "mid_epoch_restore_log_seconds": 1971.9,
+  "sampler_offsets": {
+    "acdc": 1258,
+    "brats": 1258,
+    "lits": 1258
+  },
+  "pending_accumulation": {
+    "saved_remainder": 3,
+    "saved_gradients_finite_verified_in_v6": true,
+    "restoration_evidence": "Source restores saved gradients and validates remainder before emitting MID-EPOCH RESTORE; that log and subsequent training were observed. No separate tensor-level CUDA equivalence comparison was performed."
+  },
+  "epoch_result": {
+    "epoch": 11,
+    "log_seconds": 5143.1,
+    "val_macro_dice": 0.20937,
+    "previous_best": 0.1941,
+    "best": 0.20937,
+    "improved": true,
+    "bad_epochs": 0,
+    "duration": "02:40:09",
+    "type": "provisional slice validation"
+  },
+  "latest_progress": {
+    "epoch": 12,
+    "phase": "train",
+    "batch": 50,
+    "total_batches": 2500,
+    "log_seconds": 5396.2,
+    "ui_runtime_seconds": 5458.0
+  },
+  "working_checkpoint": {
+    "epoch": 12,
+    "phase": "train",
+    "batch": 0,
+    "log_seconds": 5143.1,
+    "published": false,
+    "bytes_inspected": false
+  },
+  "runtime_reported": {
+    "python": "3.13.16",
+    "pytorch": "2.11.0+cu130",
+    "cuda_runtime": "13.0",
+    "gpu": "Tesla T4",
+    "log_seconds": 75.2,
+    "full_image_identity_verified": false,
+    "bitwise_cuda_trajectory_verified": false
+  },
+  "trusted_published_recovery_version": 372483892,
+  "run_number": 1,
+  "planned_runs": 21,
+  "experiment": "UniGDNetR",
+  "seed": 13,
+  "completed_kaggle_models": 0,
+  "held_out_approved": false,
+  "active_job_modified": false,
+  "source": "https://www.kaggle.com/code/bcau2025/unigdnetr-full-experiment-gpu?scriptVersionId=372675512"
+}
