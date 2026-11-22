@@ -1,9 +1,10 @@
 {
   ".gitignore": "292bfaa893e6bf6b4db5c4257560c969fbf4061d35519979d7068f3bb5b06095",
-  "EVALUATION_READINESS.md": "cf12c18dd3d03d67232cc3d6318d0de20b4713fdaeb68f3df6e25fb02e3f2ddb",
-  "EXPERIMENT_PROGRESS.md": "6d4021932ad362497077a516c683727e1b960c4a61c81d11030aa389a0f47f6f",
+  "EVALUATION_READINESS.md": "0538cc28a77734d53bfe205ed85c53bbdf60104ba1dd574840d6c8d9bb1e9111",
+  "EXPERIMENT_PROGRESS.md": "b073c990fd3c3f8e2e6c1b1507d56501cfc25ad8d992a9db9c302e607afffc94",
   "README.md": "106666706cfd06afbd94808390beaa3eb77d540bac8454e20496e507a46ecdd6",
   "RECOVERY_NOTES.md": "b40c425bdde3a14d1a6c419a608c7414d80fbaa30567fa5b78cb66a19d1f63a3",
+  "VALIDATION_IMPROVEMENT_REVIEW_20261122.md": "171fbff05880b4aa867a969907990491304855abc6ae2b5dc27610a05fe2ba80",
   "brats_repair_sources.json": "4142a7f9116b961185647e2418cf20de8e15d65bb44793b55c6fbf680e14991d",
   "local_evaluation_test_report.json": "12d68ec4d9c617e9731653254941fe76372a51d0ccbf74bc466736b4569db784",
   "local_training_history_review_20261118.json": "08dcaad7e2f0d7b7b71f1b822258fb8efaffaa09e93c2c68b429c825ac063cb9",
@@ -28,6 +29,7 @@
   "scripts/recovery_runtime.py": "d127f273b14f28bdbfd2377b80a2f8633b79fb389c78f826fe49b0e9ea36d946",
   "scripts/repair_brats.py": "446e38dec358f55c613c743168fc432f75c7e7db61a269a88c2d91135c77b89c",
   "scripts/sync_results.py": "02c4c64e60dfb8e94a725da2c5cb5048e4634f7e12b071b97978c9b01ddcd15b",
+  "scripts/training_diagnostics_candidate.py": "e1becb9319ea3bcd296db05f45b81427a1fa81d375b9550f72f6a5feddaa4b78",
   "setup_manifest.json": "5078ffdc44b96afc323c910527271627f3a7b29b6d53aab34b14811a8d474d35",
   "synthetic_evaluation_memory_profile.json": "0d6e0842032ee608b71bb56c080f5fe1b6b50e77fef329d2c9ced39ffe81e87e",
   "tests/test_content_provenance.py": "19b11762fb3c40cf1c6a49fbaa4e8e230e0fea10f8fd774bb081ecedb718bfdb",
@@ -37,5 +39,7 @@
   "tests/test_evaluation_guardrails.py": "33dd7985a122605791e70858cc25400982e808b2833d01a2573191918fe566d6",
   "tests/test_evaluation_memory.py": "271142af6eb62a157d5a994ab6fe9dbea4b79b7d788facc13e8a5c899398f325",
   "tests/test_evaluation_neural.py": "d063be9686d8e7ded0d0418e779e6c969500afce85f79704b46e87922b18d5ae",
-  "tests/test_result_export.py": "59cf00e8ed0f40a7101f5caf56859bdca91e8bf9c1c38e9b08f27c88ec93cff3"
+  "tests/test_result_export.py": "59cf00e8ed0f40a7101f5caf56859bdca91e8bf9c1c38e9b08f27c88ec93cff3",
+  "tests/test_training_diagnostics_candidate.py": "374641e83b8f9a4b0ae1e322485bf3426490c5987bf231ff708a2f01df968c35",
+  "training_diagnostics_validation_20261122.json": "2aadaf7e8dda287232054dcd9510e8577a2ca02342e0f9d4009c573cc08547ac"
 }

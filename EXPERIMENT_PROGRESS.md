@@ -1,5 +1,12 @@
 # UniGDNetR experiment progress — 16 November 2026
 
+## Latest status — 22 November 2026: Kaggle continuation submitted
+
+The user's new request authorizes Kaggle continuation and validation-based improvement work, superseding the earlier blanket launch hold. Fresh editor observations showed zero active events and renewed free GPU quota (00:00 / 30 hours). Exactly one prior notebook input was updated from V4 to V5; five source datasets were preserved. V6 **372483892** was submitted once with **+0/-0 source diff**, original protocol and nine-hour session cap. The live viewer showed **Queued**, one active event. Recovery is NOT yet verified: require the complete byte audit, nine index reuses, strict acceptance and explicit epoch-9/batch-480 resume. V5 remains the trusted published recovery source. Runtime environment equivalence remains unresolved (original editor pin versus queued viewer Latest Container Image).
+
+A separate FP32-loss/per-class diagnostic candidate passed three synthetic CPU checks. It is not deployed to V6 and establishes no real-data performance gain or cause for the low local BraTS scores. See [the dated review](VALIDATION_IMPROVEMENT_REVIEW_20261122.md) and [test record](training_diagnostics_validation_20261122.json). The actual 21 local checkpoint inspections and execution/pairing provenance remain outstanding; supplied logs and notebook are already inspected. Held-out approval remains closed. Local and Kaggle cohort provenance remain distinct.
+
+
 **Status: INCOMPLETE. These are provisional validation results, not final test results.**
 
 ## Saved session 2

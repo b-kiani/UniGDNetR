@@ -1,5 +1,12 @@
 # Held-out evaluation readiness — 16 November 2026
 
+## Latest gate update — 22 November 2026
+
+Kaggle training continuation V6 **372483892** is authorized and submitted, last observed queued; this does not authorize held-out evaluation. No checkpoint recovery is claimed until the V5 byte audit, nine index reuses, strict acceptance and epoch-9/batch-480 resume are logged. Preserve the active job. All checkpoint, CUDA/MC/RNG, real-volume memory/disk, calibration, scenario and cohort coverage gates remain in force. The actual runtime environment still needs verification.
+
+The opt-in training diagnostic candidate passed three synthetic CPU tests, remains outside the baseline notebook, and provides no evidence of improved held-out performance. Its explicit-FP16 overflow fixture must not be attributed to actual CUDA autocast or the low local BraTS results. See [validation review](VALIDATION_IMPROVEMENT_REVIEW_20261122.md). All 21 supplied local histories are already inspected; next evidence is actual checkpoint inspection and execution/repair provenance or a separately saved fresh pairing audit. Keep the older audit and separate cohort coverage.
+
+
 **Status: candidate passed local synthetic CPU checks; held-out evaluation has not run. CUDA/real-cohort approval remains pending.**
 
 The saved `03_UniGDNetR_EVALUATE(2).ipynb` was located and read in full from the user's existing files on 16 November. The recovered source is stored as `notebooks/03_UniGDNetR_EVALUATE_original.ipynb` in the source archive and as a convenient repository-root copy. It is the existing Stage 3 source, not a newly invented replacement. The earlier missing-file blocker is resolved. This does not establish compatibility with the Kaggle RAM-fixed training port.
