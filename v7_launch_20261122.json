@@ -1,0 +1,34 @@
+{
+  "observed_at_utc": "2026-11-22T16:18:09.704473+00:00",
+  "version": 372675512,
+  "status": "running_startup_only",
+  "source_diff": "+0/-0",
+  "prior_output_updated_from": 370300234,
+  "prior_output_updated_to": 372483892,
+  "prior_notebook_input_count": 1,
+  "source_datasets_unchanged": 5,
+  "quota_before_launch": "09:06 / 30 hours used",
+  "accelerator": "GPU T4 x2",
+  "internet": true,
+  "draft_session": "off",
+  "editor_environment": "Pin to original environment (2026-11-02)",
+  "viewer_environment": "Latest Container Image",
+  "session_hours": 9,
+  "active_events_after_launch": 1,
+  "recovery_verified": false,
+  "required_resume": {
+    "epoch": 11,
+    "batch": 1887,
+    "samples_consumed_per_task": 1258,
+    "accumulation_remainder": 3
+  },
+  "required_checks": [
+    "6917 source byte hashes match",
+    "nine indices reused",
+    "strict checkpoint accepted",
+    "explicit mid-epoch resume at epoch 11 batch 1887 with pending gradients retained"
+  ],
+  "trusted_published_recovery": 372483892,
+  "url": "https://www.kaggle.com/code/bcau2025/unigdnetr-full-experiment-gpu?scriptVersionId=372675512",
+  "held_out_approved": false
+}

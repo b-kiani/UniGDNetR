@@ -1,7 +1,7 @@
 {
   ".gitignore": "292bfaa893e6bf6b4db5c4257560c969fbf4061d35519979d7068f3bb5b06095",
-  "EVALUATION_READINESS.md": "f57c71704f84de524887fa465ee7cd94555ac369245806701f0f989c4962c484",
-  "EXPERIMENT_PROGRESS.md": "ec64978ca883200cb99d9801137aee9327464b56d7ff76624618bc6691089660",
+  "EVALUATION_READINESS.md": "3ca45287020c181a58fd0c158c8c672a5f63259da8c0e4a8177d33a961473026",
+  "EXPERIMENT_PROGRESS.md": "d5cf4b266f13f7e52b0a629f9e14a40a7e1b779a72b5d17373f7a99dc2526055",
   "README.md": "106666706cfd06afbd94808390beaa3eb77d540bac8454e20496e507a46ecdd6",
   "RECOVERY_NOTES.md": "b40c425bdde3a14d1a6c419a608c7414d80fbaa30567fa5b78cb66a19d1f63a3",
   "VALIDATION_IMPROVEMENT_REVIEW_20261122.md": "171fbff05880b4aa867a969907990491304855abc6ae2b5dc27610a05fe2ba80",
@@ -18,6 +18,7 @@
   "recovery_milestone_v6_20261122.json": "2dc2c7e1fac365e90d5a3df795a1ee8032c06940d044fc16a94739f26678f77e",
   "recovery_verification_v4.json": "a76ed24fe07a8d29adde60edcf75002b4ae1e4d1bda3792ed5acfba9ba0c3767",
   "recovery_verification_v5.json": "7bbc190cb2b2cb649d50cb4d9112da9f71bb2b1cd6c091c3f375d3f64b1f09c0",
+  "recovery_verification_v6.json": "ea8cd89c96c66d84ea20be092663fee9746ffb631f3f3228830584f074d22d92",
   "scripts/build_evaluation_candidate.py": "e531d1392b0bcff0c7a539df9eb727b5734ab3cd1d1ee346d5441dd27adda491",
   "scripts/build_kaggle.py": "f1ac1e959f5dcd8a454552d5e57f1d648b6c668751906a00467c6ea3a52376c8",
   "scripts/content_provenance.py": "2f6adc6c3f7355f863c810980c026df192289cc1918213cf6f9a8e0ad91bb584",
@@ -45,5 +46,6 @@
   "training_diagnostics_validation_20261122.json": "2aadaf7e8dda287232054dcd9510e8577a2ca02342e0f9d4009c573cc08547ac",
   "v6_epoch10_result_20261122.json": "49e5ee2e27630654b082e45be99873751df5a22950b930de5080a399b7c8d70f",
   "v6_epoch9_result_20261122.json": "353f7c9c0ab14644db40d6a068cf56b4ca7d4df7db7685ba44230cad1e4a0d66",
-  "v6_epoch9_validation_20261122.json": "eb47f1284414c37c76db7fcb13b87c634640f8d4e2d8e4321f16e7ff4746b942"
+  "v6_epoch9_validation_20261122.json": "eb47f1284414c37c76db7fcb13b87c634640f8d4e2d8e4321f16e7ff4746b942",
+  "v7_launch_20261122.json": "1de03f66cbdce77d83d72f3db162a694fa68687ec23da8bbd4959ee908a2f494"
 }
