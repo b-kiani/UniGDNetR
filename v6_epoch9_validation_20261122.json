@@ -1,0 +1,44 @@
+{
+  "observed_at_utc": "2026-11-22T09:13:46.192708+00:00",
+  "version": 372483892,
+  "status": "running",
+  "epoch": 9,
+  "experiment": "UniGDNetR",
+  "seed": 13,
+  "training_completed": {
+    "batches": 2500,
+    "log_seconds": 6485.6,
+    "working_checkpoint_phase": "validation",
+    "working_checkpoint_batch": 0,
+    "published": false
+  },
+  "validation_progress": {
+    "batch": 500,
+    "total_batches": 567,
+    "percent": 88.2,
+    "log_seconds": 8306.7,
+    "score": null
+  },
+  "runtime_comparison": {
+    "historical_version": 370300234,
+    "historical_log_seconds": 103.7,
+    "current_version": 372483892,
+    "current_log_seconds": 92.4,
+    "matching_logged_fields": {
+      "python": "3.13.16",
+      "pytorch": "2.11.0+cu130",
+      "cuda_runtime": "13.0",
+      "gpu": "Tesla T4"
+    },
+    "full_container_identity_verified": false,
+    "bitwise_cuda_trajectory_verified": false
+  },
+  "sources": [
+    "https://www.kaggle.com/code/bcau2025/unigdnetr-full-experiment-gpu/log?scriptVersionId=372483892",
+    "https://www.kaggle.com/code/bcau2025/unigdnetr-full-experiment-gpu/log?scriptVersionId=370300234"
+  ],
+  "trusted_published_recovery_version": 370300234,
+  "kaggle_completed_models": 0,
+  "held_out_approved": false,
+  "active_job_modified": false
+}

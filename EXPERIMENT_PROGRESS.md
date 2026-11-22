@@ -1,5 +1,12 @@
 # UniGDNetR experiment progress — 16 November 2026
 
+## V6 epoch 9 training finished; validation underway — 22 November 2026
+
+Live V6 logs record epoch 9 training completion and a working pre-validation checkpoint at **6,485.6 s** (phase validation, batch 0). Validation reached **500/567 batches (88.2%) at 8,306.7 s**. No epoch-9 score is available at this observation. The job remains running and unchanged, run 1/21, seed 13. This is phase progress, not model completion or published checkpoint verification. V5 remains the trusted published recovery source; no held-out results exist.
+
+A fresh read of archived V5 logs (103.7 s) and V6 logs (92.4 s) establishes matching reported **Python 3.13.16, PyTorch 2.11.0+cu130, CUDA runtime 13.0 and Tesla T4**. This narrows the editor/viewer environment discrepancy to an unresolved full-container identity question; it does not establish complete package/image equivalence or a bitwise CUDA trajectory. Earlier unverified-runtime statements are refined by this four-field comparison, not erased. See [dated evidence](v6_epoch9_validation_20261122.json). Local checkpoint/provenance and evaluator approval gates remain unchanged.
+
+
 ## Verified V6 mid-epoch recovery — 22 November 2026
 
 V6 **372483892 is RUNNING**, with recovery verified from live logs. Full source byte audit reached **6,917/6,917 at 2,155.7 s**; content provenance was verified at 2,156.1 s with unchanged fingerprint `e8ab1ec322826bd08a468e7d17ad4fe60858b1c5f8467e770c5e5dc671394cb6`. All nine fingerprint-matched indices were reused. CUDA preflight passed for BraTS, LiTS and ACDC. At **2,175.4 s** the checkpoint header was accepted (format 2, train, epoch_index 8, batch 480, saved 2026-11-16T22:56:43Z), followed by explicit `RESUMED ... inside epoch 9 at batch 480; completed samples will not be reloaded` and sampler-offset restoration (320 per task). This verifies live recovery without repeating the saved 480 batches.

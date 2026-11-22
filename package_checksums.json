@@ -1,7 +1,7 @@
 {
   ".gitignore": "292bfaa893e6bf6b4db5c4257560c969fbf4061d35519979d7068f3bb5b06095",
-  "EVALUATION_READINESS.md": "fead7952506ca6cf9a3f4d2be6a71a47e0efacbc67a13eb32f024d1fcbeb3298",
-  "EXPERIMENT_PROGRESS.md": "59cb44f3207572f3678de05ffd94e8bd98bf82eeab23e5986b6413be9e52e434",
+  "EVALUATION_READINESS.md": "b0793549ecbdfcd9942d52d22f6cb1560c57c7b7c0b1092ed2cbeee81ff2d043",
+  "EXPERIMENT_PROGRESS.md": "eaddfd841b6093060485ff1baba00002c8f606d42552159fcd2c592a320dadb6",
   "README.md": "106666706cfd06afbd94808390beaa3eb77d540bac8454e20496e507a46ecdd6",
   "RECOVERY_NOTES.md": "b40c425bdde3a14d1a6c419a608c7414d80fbaa30567fa5b78cb66a19d1f63a3",
   "VALIDATION_IMPROVEMENT_REVIEW_20261122.md": "171fbff05880b4aa867a969907990491304855abc6ae2b5dc27610a05fe2ba80",
@@ -42,5 +42,6 @@
   "tests/test_evaluation_neural.py": "d063be9686d8e7ded0d0418e779e6c969500afce85f79704b46e87922b18d5ae",
   "tests/test_result_export.py": "59cf00e8ed0f40a7101f5caf56859bdca91e8bf9c1c38e9b08f27c88ec93cff3",
   "tests/test_training_diagnostics_candidate.py": "374641e83b8f9a4b0ae1e322485bf3426490c5987bf231ff708a2f01df968c35",
-  "training_diagnostics_validation_20261122.json": "2aadaf7e8dda287232054dcd9510e8577a2ca02342e0f9d4009c573cc08547ac"
+  "training_diagnostics_validation_20261122.json": "2aadaf7e8dda287232054dcd9510e8577a2ca02342e0f9d4009c573cc08547ac",
+  "v6_epoch9_validation_20261122.json": "eb47f1284414c37c76db7fcb13b87c634640f8d4e2d8e4321f16e7ff4746b942"
 }
