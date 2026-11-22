@@ -1,0 +1,58 @@
+{
+  "observed_at_utc": "2026-11-22T20:45:00Z",
+  "observed_at_local": "2026-11-23T01:45:00+05:00",
+  "observation_time_precision": "approximate minute",
+  "version": 372675512,
+  "status": "running",
+  "active_events": 1,
+  "epoch_result": {
+    "epoch": 12,
+    "log_seconds": 14030.7,
+    "val_macro_dice": 0.22563,
+    "previous_best": 0.20937,
+    "best": 0.22563,
+    "improved": true,
+    "bad_epochs": 0,
+    "duration": "02:28:07",
+    "type": "provisional slice validation",
+    "precision": "rounded live log; full precision and task-specific scores not inspected"
+  },
+  "next_epoch_begin": {
+    "epoch": 13,
+    "log_seconds": 14030.7
+  },
+  "latest_progress": {
+    "epoch": 13,
+    "phase": "train",
+    "batch": 750,
+    "total_batches": 2500,
+    "log_seconds": 16114.8,
+    "ui_runtime_seconds": 16171.9
+  },
+  "working_checkpoint": {
+    "epoch": 13,
+    "phase": "train",
+    "batch": 618,
+    "log_seconds": 15901.8,
+    "published": false,
+    "bytes_inspected": false
+  },
+  "trusted_published_recovery_version": 372483892,
+  "run_number": 1,
+  "planned_runs": 21,
+  "experiment": "UniGDNetR",
+  "seed": 13,
+  "completed_kaggle_models": 0,
+  "held_out_results": false,
+  "held_out_approved": false,
+  "active_job_modified": false,
+  "duplicate_launched": false,
+  "scientific_protocol_changed": false,
+  "diagnostic_candidate_deployed": false,
+  "unchanged_software_tests_rerun": false,
+  "limitations": [
+    "Full container/package identity and bitwise CUDA trajectory remain unverified.",
+    "Local 21-checkpoint bytes, execution and repair provenance remain separate outstanding gates."
+  ],
+  "source": "https://www.kaggle.com/code/bcau2025/unigdnetr-full-experiment-gpu?scriptVersionId=372675512"
+}

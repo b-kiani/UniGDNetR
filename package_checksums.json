@@ -1,7 +1,7 @@
 {
   ".gitignore": "292bfaa893e6bf6b4db5c4257560c969fbf4061d35519979d7068f3bb5b06095",
-  "EVALUATION_READINESS.md": "13a1c5954ba5c9f3c2fc8e8684263f540a8498183f8a8ca11756942c55381b5e",
-  "EXPERIMENT_PROGRESS.md": "1a2cf16cce1e461eeb8ef7e03e233c2e989d68406a73717e96c02d8242a441e8",
+  "EVALUATION_READINESS.md": "e607d85d1df590908b06ae5e3afc925c37c181e787eaa030e62ce79bb2bbdff8",
+  "EXPERIMENT_PROGRESS.md": "fd2eb6b58e79360d7d88aa641cf38e4b91c54416944a5acda76dceec78acdb7c",
   "README.md": "106666706cfd06afbd94808390beaa3eb77d540bac8454e20496e507a46ecdd6",
   "RECOVERY_NOTES.md": "b40c425bdde3a14d1a6c419a608c7414d80fbaa30567fa5b78cb66a19d1f63a3",
   "VALIDATION_IMPROVEMENT_REVIEW_20261122.md": "171fbff05880b4aa867a969907990491304855abc6ae2b5dc27610a05fe2ba80",
@@ -13,7 +13,7 @@
   "notebooks/03_UniGDNetR_EVALUATE_original.ipynb": "d34591cd0da8d65fff1da459f54dc47a95ab4e773af5fd8f231a3e2f6e3298f9",
   "notebooks/UniGDNetR_Kaggle_Evaluation_CANDIDATE.ipynb": "7938dd36c6ff1d7b9ead51e59dac5d45ab0c5b81eb04cdcaa1f0cd165e38e7c9",
   "notebooks/UniGDNetR_Kaggle_Full_Experiment.ipynb": "276c7952d3470e321ec81e3d816050f57f4bfb1ba0ec7b7854d495ab91b7870e",
-  "provisional_validation.csv": "545fa359578b579148350f833485ce6b952e686b7af6ca511ca7e634ef566131",
+  "provisional_validation.csv": "270f7a360f97b490706e445b6f2b4c456f1239e3e26c0db3e8c5884c4526c7fc",
   "recovery_baseline_v2.json": "69bb14a888a9cb9b6709dd527d825e7619b48a1fdda303367a62111fef3838b6",
   "recovery_milestone_v6_20261122.json": "2dc2c7e1fac365e90d5a3df795a1ee8032c06940d044fc16a94739f26678f77e",
   "recovery_milestone_v7_20261122.json": "d82989cdd7ecd98e243e9fd3cdeb065881385d12fc0a409b2cc25a5a3c7fc54c",
@@ -48,5 +48,6 @@
   "v6_epoch10_result_20261122.json": "49e5ee2e27630654b082e45be99873751df5a22950b930de5080a399b7c8d70f",
   "v6_epoch9_result_20261122.json": "353f7c9c0ab14644db40d6a068cf56b4ca7d4df7db7685ba44230cad1e4a0d66",
   "v6_epoch9_validation_20261122.json": "eb47f1284414c37c76db7fcb13b87c634640f8d4e2d8e4321f16e7ff4746b942",
+  "v7_epoch12_result_20261123.json": "b31aed7bededb23f354bdc614baf727508cae2cdd521370ebe5f437a89b1b2bd",
   "v7_launch_20261122.json": "1de03f66cbdce77d83d72f3db162a694fa68687ec23da8bbd4959ee908a2f494"
 }

@@ -1,5 +1,12 @@
 # UniGDNetR experiment progress — 16 November 2026
 
+## V7 epoch 12 completed — 23 November 2026
+
+Live V7 **372675512** logs show epoch **12** ending at **14,030.7 s**, provisional slice-validation macro Dice **0.22563**, best **0.22563**, improved=True, bad_epochs=0 (previous best **0.20937**), logged duration **02:28:07**. Epoch **13** began at **14,030.7 s** and reached **750/2,500 batches (30%) at 16,114.8 s**; the UI was Running at 16,171.9 s with one active event. The latest observed working recovery checkpoint was epoch 13, phase train, **batch 618 at 15,901.8 s**. It is not published or independently byte-inspected. See [dated epoch evidence](v7_epoch12_result_20261123.json) and `provisional_validation.csv` (12 consecutive epochs). These are rounded live-log scores; full precision and task-specific epoch-12 scores have not been inspected.
+
+**V6 remains the latest trusted published recovery** until terminal V7 output verification. Still run **1/21**, UniGDNetR seed 13, zero completed Kaggle models and no held-out results. Healthy V7 was left unchanged; no duplicate was launched. The original protocol, separate local 21-checkpoint/execution/repair provenance gates, held-out approval and full-container/bitwise CUDA limitations remain unchanged. No diagnostic candidate was deployed or unchanged software tests rerun. This dated update supersedes earlier active epoch-12 descriptions below.
+
+
 ## V7 recovery verified and epoch 11 completed — 22 November 2026
 
 V7 **372675512** completed the **6,917/6,917 source-byte audit at 1,951.0 s** and verified the unchanged content fingerprint at **1,951.3 s**. All **nine fingerprint-matched indices** were reused (1,954.4–1,957.0 s), and CUDA preflight passed for all three tasks (1,964.6–1,964.8 s). The accepted recovery header at **1,971.8 s** is format 2, train, epoch_index 10, batch 1,887, saved 2026-11-22T15:54:50Z. Explicit **RESUMED inside epoch 11 at batch 1,887** and **MID-EPOCH RESTORE** at 1,971.9 s confirm sampler offsets **1,258/task**; completed batches were not repeated. The unchanged source validates the accumulation remainder and restores saved gradients before emitting that restore log. Together with the inspected V6 remainder 3 and finite pending gradients, this supports restoration through the normal recovery path; no separate tensor-level CUDA equivalence test was performed.
