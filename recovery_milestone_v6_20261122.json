@@ -1,0 +1,75 @@
+{
+  "observed_at_utc": "2026-11-22T08:10:48.343126+00:00",
+  "version": 372483892,
+  "status": "running",
+  "evidence_type": "live signed-in Kaggle log inspection; not published-output verification",
+  "source_url": "https://www.kaggle.com/code/bcau2025/unigdnetr-full-experiment-gpu/log?scriptVersionId=372483892",
+  "prior_trusted_published_version": 370300234,
+  "content_audit": {
+    "files": 6917,
+    "completed_log_seconds": 2155.7,
+    "verified_log_seconds": 2156.1,
+    "fingerprint": "e8ab1ec322826bd08a468e7d17ad4fe60858b1c5f8467e770c5e5dc671394cb6"
+  },
+  "reused_indices": [
+    "brats_train_0a2344b4c2c0.csv",
+    "brats_val_c350dfbc768d.csv",
+    "brats_test_25d1b3d49bb8.csv",
+    "lits_train_c88a9191502d.csv",
+    "lits_val_42f7ed6973c9.csv",
+    "lits_test_b9ea0cc416f3.csv",
+    "acdc_train_703dd8f8cb4d.csv",
+    "acdc_val_e83528a65cae.csv",
+    "acdc_test_5d9094cc48e5.csv"
+  ],
+  "gpu_preflight_passed": [
+    "brats",
+    "lits",
+    "acdc"
+  ],
+  "resume": {
+    "experiment": "UniGDNetR",
+    "seed": 13,
+    "format": 2,
+    "phase": "train",
+    "epoch_index": 8,
+    "epoch": 9,
+    "batch": 480,
+    "saved_at_utc": "2026-11-16T22:56:43Z",
+    "accepted_and_resumed_log_seconds": 2175.4,
+    "explicit_log": "RESUMED UniGDNetR/seed13 inside epoch 9 at batch 480; completed samples will not be reloaded.",
+    "sampler_offsets": {
+      "acdc": 320,
+      "brats": 320,
+      "lits": 320
+    }
+  },
+  "latest_training_observed": {
+    "epoch": 9,
+    "batch": 1750,
+    "total_batches": 2500,
+    "percent": 70,
+    "log_seconds": 4855.5
+  },
+  "latest_checkpoint_observed": {
+    "phase": "train",
+    "epoch": 9,
+    "batch": 1518,
+    "log_seconds": 4430.8,
+    "published": false
+  },
+  "runtime_observed": {
+    "python": "3.13.16",
+    "torch": "2.11.0+cu130",
+    "cuda_runtime": "13.0",
+    "gpu": "Tesla T4",
+    "viewer_environment": "Latest Container Image",
+    "historical_environment_equivalence_verified": false
+  },
+  "kaggle_completed_models": 0,
+  "new_epoch_score": null,
+  "held_out_approved": false,
+  "local_21_checkpoint_evidence_changed": false,
+  "job_modified": false,
+  "duplicate_launched": false
+}

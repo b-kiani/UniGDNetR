@@ -1,5 +1,14 @@
 # Held-out evaluation readiness — 16 November 2026
 
+## Verified V6 mid-epoch recovery — 22 November 2026
+
+V6 **372483892 is RUNNING**, with recovery verified from live logs. Full source byte audit reached **6,917/6,917 at 2,155.7 s**; content provenance was verified at 2,156.1 s with unchanged fingerprint `e8ab1ec322826bd08a468e7d17ad4fe60858b1c5f8467e770c5e5dc671394cb6`. All nine fingerprint-matched indices were reused. CUDA preflight passed for BraTS, LiTS and ACDC. At **2,175.4 s** the checkpoint header was accepted (format 2, train, epoch_index 8, batch 480, saved 2026-11-16T22:56:43Z), followed by explicit `RESUMED ... inside epoch 9 at batch 480; completed samples will not be reloaded` and sampler-offset restoration (320 per task). This verifies live recovery without repeating the saved 480 batches.
+
+Latest observed training: **epoch 9, 1,750/2,500 batches (70%) at 4,855.5 s**. A working checkpoint was logged at batch **1,518**, 4,430.8 s; it is not yet published or independently inspected. **No new epoch score, completed Kaggle model or held-out result.** V5 remains the trusted published recovery source until V6 ends and its outputs are verified. Healthy V6 was left unchanged; no duplicate job was launched.
+
+Actual runtime logs show **Python 3.13.16, PyTorch 2.11.0+cu130, CUDA runtime 13.0, Tesla T4**. The viewer says Latest Container Image; this records actual runtime facts, not proof of equivalence to the historical environment or bitwise CUDA trajectory. The prior editor-pin discrepancy remains a provenance limitation pending historical comparison. See [live logs](https://www.kaggle.com/code/bcau2025/unigdnetr-full-experiment-gpu/log?scriptVersionId=372483892) and [structured milestone](recovery_milestone_v6_20261122.json). Local checkpoint verification and all held-out gates remain unchanged; the isolated diagnostic candidate is not deployed to this run.
+
+
 ## Latest gate update — 22 November 2026
 
 Kaggle training continuation V6 **372483892** is authorized and submitted, last observed queued; this does not authorize held-out evaluation. No checkpoint recovery is claimed until the V5 byte audit, nine index reuses, strict acceptance and epoch-9/batch-480 resume are logged. Preserve the active job. All checkpoint, CUDA/MC/RNG, real-volume memory/disk, calibration, scenario and cohort coverage gates remain in force. The actual runtime environment still needs verification.
