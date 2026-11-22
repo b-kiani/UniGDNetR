@@ -1,7 +1,7 @@
 {
   ".gitignore": "292bfaa893e6bf6b4db5c4257560c969fbf4061d35519979d7068f3bb5b06095",
-  "EVALUATION_READINESS.md": "b0793549ecbdfcd9942d52d22f6cb1560c57c7b7c0b1092ed2cbeee81ff2d043",
-  "EXPERIMENT_PROGRESS.md": "eaddfd841b6093060485ff1baba00002c8f606d42552159fcd2c592a320dadb6",
+  "EVALUATION_READINESS.md": "f0e483ee058a9ea62b46d0cdae745c9856387513bed1bd7ef01626029f11cf09",
+  "EXPERIMENT_PROGRESS.md": "5e511c923286fcfcc59547b6fff089f1eea0a63dbe21e2afdb36a400c04af100",
   "README.md": "106666706cfd06afbd94808390beaa3eb77d540bac8454e20496e507a46ecdd6",
   "RECOVERY_NOTES.md": "b40c425bdde3a14d1a6c419a608c7414d80fbaa30567fa5b78cb66a19d1f63a3",
   "VALIDATION_IMPROVEMENT_REVIEW_20261122.md": "171fbff05880b4aa867a969907990491304855abc6ae2b5dc27610a05fe2ba80",
@@ -13,7 +13,7 @@
   "notebooks/03_UniGDNetR_EVALUATE_original.ipynb": "d34591cd0da8d65fff1da459f54dc47a95ab4e773af5fd8f231a3e2f6e3298f9",
   "notebooks/UniGDNetR_Kaggle_Evaluation_CANDIDATE.ipynb": "7938dd36c6ff1d7b9ead51e59dac5d45ab0c5b81eb04cdcaa1f0cd165e38e7c9",
   "notebooks/UniGDNetR_Kaggle_Full_Experiment.ipynb": "276c7952d3470e321ec81e3d816050f57f4bfb1ba0ec7b7854d495ab91b7870e",
-  "provisional_validation.csv": "d25419b295cc08f174ded3ee1bc033e78da6801ba9a0515b11ea75cd75dfc13e",
+  "provisional_validation.csv": "2649731351e8e8ef9d21d7a0c49a017f97c58bd70246ba8214d89360a9f67eb7",
   "recovery_baseline_v2.json": "69bb14a888a9cb9b6709dd527d825e7619b48a1fdda303367a62111fef3838b6",
   "recovery_milestone_v6_20261122.json": "2dc2c7e1fac365e90d5a3df795a1ee8032c06940d044fc16a94739f26678f77e",
   "recovery_verification_v4.json": "a76ed24fe07a8d29adde60edcf75002b4ae1e4d1bda3792ed5acfba9ba0c3767",
@@ -43,5 +43,6 @@
   "tests/test_result_export.py": "59cf00e8ed0f40a7101f5caf56859bdca91e8bf9c1c38e9b08f27c88ec93cff3",
   "tests/test_training_diagnostics_candidate.py": "374641e83b8f9a4b0ae1e322485bf3426490c5987bf231ff708a2f01df968c35",
   "training_diagnostics_validation_20261122.json": "2aadaf7e8dda287232054dcd9510e8577a2ca02342e0f9d4009c573cc08547ac",
+  "v6_epoch9_result_20261122.json": "36449245ce0ed0ce9258a3873628a220ef60b0583a78ae9445e7d59e8c704e83",
   "v6_epoch9_validation_20261122.json": "eb47f1284414c37c76db7fcb13b87c634640f8d4e2d8e4321f16e7ff4746b942"
 }

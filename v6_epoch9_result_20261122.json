@@ -1,0 +1,43 @@
+{
+  "observed_at_utc": "2026-11-22T10:36:10.565891+00:00",
+  "version": 372483892,
+  "ui_status": "Running",
+  "active_events": 1,
+  "run": 1,
+  "planned_runs": 21,
+  "experiment": "UniGDNetR",
+  "seed": 13,
+  "completed_epoch": 9,
+  "validation_macro_dice": 0.17245,
+  "previous_best_validation_macro_dice": 0.15813,
+  "improved": true,
+  "bad_epochs": 0,
+  "epoch_end_log_seconds": 9448.3,
+  "latest_training": {
+    "epoch": 10,
+    "batch": 125,
+    "total": 2500,
+    "log_seconds": 10195.2
+  },
+  "latest_working_checkpoint": {
+    "epoch": 10,
+    "phase": "train",
+    "batch": 99,
+    "log_seconds": 10159.6,
+    "published": false
+  },
+  "possible_stall": {
+    "runtime_counter_seconds": 13640.3,
+    "last_log_seconds": 10195.2,
+    "gap_seconds": 3445.1,
+    "rechecked_after_reload": true,
+    "failure_confirmed": false,
+    "cause_known": false,
+    "action": "Preserve job; monitor freshness, no cancellation or duplicate launch."
+  },
+  "source": "https://www.kaggle.com/code/bcau2025/unigdnetr-full-experiment-gpu/log?scriptVersionId=372483892",
+  "trusted_published_recovery_version": 370300234,
+  "completed_kaggle_models": 0,
+  "held_out_approved": false,
+  "job_modified": false
+}

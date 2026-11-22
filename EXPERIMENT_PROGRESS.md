@@ -1,5 +1,14 @@
 # UniGDNetR experiment progress — 16 November 2026
 
+## V6 epoch 9 result and log-freshness concern — 22 November 2026
+
+Epoch 9 completed at **9,448.3 s**, provisional macro validation Dice **0.17245**, best **0.17245**, improved=True, bad_epochs=0 (previous best 0.15813). Epoch 10 began immediately. Latest observed training is **125/2,500 batches (5%) at 10,195.2 s**; the most recent working checkpoint was logged at epoch 10 batch 99 at 10,159.6 s. These working files have not been published or independently inspected. The new row in `provisional_validation.csv` is internal slice-validation evidence, not a volumetric held-out score or completed model.
+
+**Possible training or log-delivery stall:** after a fresh reload the UI still reports Running with one active event, but its runtime counter **13,640.3 s** is **3,445.1 s (about 57 minutes)** beyond the latest available log entry. There is no logged exception or confirmed cause. A running badge alone does not establish healthy forward progress; neither does the log gap by itself prove process failure. Preserve the job and monitor for renewed logs or terminal evidence; do not cancel/restart or create duplicate jobs based on an unconfirmed cause. No job was modified.
+
+See [dated result and freshness evidence](v6_epoch9_result_20261122.json) and [live logs](https://www.kaggle.com/code/bcau2025/unigdnetr-full-experiment-gpu/log?scriptVersionId=372483892). Still run 1/21, zero completed Kaggle models and no held-out results. V5 remains the trusted published recovery source. Local checkpoint/provenance gates and the recorded full-container/bitwise runtime limitations remain in force.
+
+
 ## V6 epoch 9 training finished; validation underway — 22 November 2026
 
 Live V6 logs record epoch 9 training completion and a working pre-validation checkpoint at **6,485.6 s** (phase validation, batch 0). Validation reached **500/567 batches (88.2%) at 8,306.7 s**. No epoch-9 score is available at this observation. The job remains running and unchanged, run 1/21, seed 13. This is phase progress, not model completion or published checkpoint verification. V5 remains the trusted published recovery source; no held-out results exist.
