@@ -1,5 +1,12 @@
 # UniGDNetR experiment progress — 16 November 2026
 
+## V7 epoch 13 completed — 23 November 2026
+
+Live V7 **372675512** logs show epoch **13** ending at **22,743.7 s**, provisional slice-validation macro Dice **0.23598**, best **0.23598**, improved=True, bad_epochs=0 (previous best **0.22563**), logged duration **02:25:12**. Epoch **14** began at **22,743.7 s** and reached **275/2,500 batches (11%) at 23,376.0 s**; the UI was Running at 23,418.1 s with one active event. The latest observed working recovery checkpoint was epoch 14, phase train, **batch 264 at 23,352.2 s**. It is not published or independently byte-inspected. See [dated epoch evidence](v7_epoch13_result_20261123.json) and `provisional_validation.csv` (13 consecutive epochs). Full precision and task-specific epoch-13 scores have not been inspected; the reported score is rounded from live logs.
+
+**V6 remains the latest trusted published recovery** until terminal V7 output verification. Still run **1/21**, UniGDNetR seed 13, zero completed Kaggle models and no held-out results. Healthy V7 was left unchanged; no duplicate was launched. Original protocol, separate local 21-checkpoint/execution/repair provenance gates, held-out approval and full-container/bitwise CUDA limitations remain unchanged. No diagnostic candidate was deployed or unchanged software tests rerun. This dated update supersedes earlier active epoch-13 descriptions below.
+
+
 ## V7 epoch 12 completed — 23 November 2026
 
 Live V7 **372675512** logs show epoch **12** ending at **14,030.7 s**, provisional slice-validation macro Dice **0.22563**, best **0.22563**, improved=True, bad_epochs=0 (previous best **0.20937**), logged duration **02:28:07**. Epoch **13** began at **14,030.7 s** and reached **750/2,500 batches (30%) at 16,114.8 s**; the UI was Running at 16,171.9 s with one active event. The latest observed working recovery checkpoint was epoch 13, phase train, **batch 618 at 15,901.8 s**. It is not published or independently byte-inspected. See [dated epoch evidence](v7_epoch12_result_20261123.json) and `provisional_validation.csv` (12 consecutive epochs). These are rounded live-log scores; full precision and task-specific epoch-12 scores have not been inspected.
