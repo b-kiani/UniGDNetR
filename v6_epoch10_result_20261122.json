@@ -1,0 +1,40 @@
+{
+  "observed_at_utc": "2026-11-22T14:12:14.002503+00:00",
+  "version": 372483892,
+  "status": "running",
+  "experiment": "UniGDNetR",
+  "seed": 13,
+  "run_number": 1,
+  "planned_runs": 21,
+  "epoch_result": {
+    "epoch": 10,
+    "log_seconds": 26364.3,
+    "val_macro_dice": 0.1941,
+    "best": 0.1941,
+    "previous_best": 0.17245,
+    "improved": true,
+    "bad_epochs": 0,
+    "duration": "04:41:55",
+    "score_type": "provisional slice validation, not held-out volumetric"
+  },
+  "subsequent_phase": {
+    "epoch": 11,
+    "phase": "train",
+    "begin_log_seconds": 26364.4,
+    "latest_ui_runtime_seconds": 26601.0
+  },
+  "working_checkpoint": {
+    "epoch": 11,
+    "batch": 0,
+    "phase": "train",
+    "log_seconds": 26364.3,
+    "published": false,
+    "bytes_inspected": false
+  },
+  "trusted_published_recovery_version": 370300234,
+  "kaggle_completed_models": 0,
+  "held_out_approved": false,
+  "active_job_modified": false,
+  "runtime_limitation": "Four reported fields match V5; full container/package identity and bitwise CUDA trajectory remain unverified.",
+  "source": "https://www.kaggle.com/code/bcau2025/unigdnetr-full-experiment-gpu/log?scriptVersionId=372483892"
+}

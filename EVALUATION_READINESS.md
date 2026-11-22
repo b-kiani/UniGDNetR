@@ -1,5 +1,12 @@
 # Held-out evaluation readiness — 16 November 2026
 
+## V6 epoch 10 completed — 22 November 2026
+
+Epoch 10 ended at **26,364.3 s**, provisional slice-validation macro Dice **0.19410**, best **0.19410**, improved=True, bad_epochs=0 (previous best **0.17245**). Epoch 11 started at **26,364.4 s**. The UI remains Running with one active event. A working recovery checkpoint was saved for epoch 11, phase train, batch 0; its bytes are not published or independently inspected. This remains run **1/21**, UniGDNetR seed 13, **zero completed Kaggle models and no held-out results**. V5 remains the trusted published recovery source until terminal V6 output verification.
+
+The healthy job and original protocol were unchanged. Local 21-checkpoint/provenance gates and full-container/bitwise CUDA limitations remain in force. No unchanged software tests were rerun. See [dated epoch result](v6_epoch10_result_20261122.json) and `provisional_validation.csv` (epochs 1–10).
+
+
 ## V6 forward progress observed after long pause — 22 November 2026
 
 Subsequent live logs confirm a new epoch-10 working checkpoint at **batch 147, 13,787.4 s**, then training **150/2,500 batches (6%) at 13,796.5 s**. Forward progress has resumed without intervention. This supersedes the immediately preceding possible-stall status, while preserving the observed approximately one-hour log/training gap as a historical event with unknown cause. No restart, cancellation, source edit or duplicate launch occurred. The working checkpoint is not yet published. Epoch 9 best provisional validation macro Dice remains **0.17245**; run 1/21, zero completed Kaggle models and no held-out results. See the subsequent-forward-progress field in [dated evidence](v6_epoch9_result_20261122.json).
