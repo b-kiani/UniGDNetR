@@ -1,7 +1,7 @@
 {
   ".gitignore": "292bfaa893e6bf6b4db5c4257560c969fbf4061d35519979d7068f3bb5b06095",
-  "EVALUATION_READINESS.md": "2ada6af535d86a0b8cc9a647648e57b9685c94e35bd752b412085a60cedebeb6",
-  "EXPERIMENT_PROGRESS.md": "ca8054fc27924c81aac5c54fd965c658c2567933458c5ad191ddd25d97d5fe7a",
+  "EVALUATION_READINESS.md": "6be7025acfb64ed1762af40326ff9ff646d9885acdd79a237921d7c7613f6a33",
+  "EXPERIMENT_PROGRESS.md": "690e9e42fc5a313ff4e1495be69811a0eafa28a4a16f03fce0a451a28d02a84a",
   "README.md": "106666706cfd06afbd94808390beaa3eb77d540bac8454e20496e507a46ecdd6",
   "RECOVERY_NOTES.md": "b40c425bdde3a14d1a6c419a608c7414d80fbaa30567fa5b78cb66a19d1f63a3",
   "VALIDATION_IMPROVEMENT_REVIEW_20261122.md": "171fbff05880b4aa867a969907990491304855abc6ae2b5dc27610a05fe2ba80",
@@ -22,6 +22,7 @@
   "recovery_verification_v5.json": "7bbc190cb2b2cb649d50cb4d9112da9f71bb2b1cd6c091c3f375d3f64b1f09c0",
   "recovery_verification_v6.json": "ea8cd89c96c66d84ea20be092663fee9746ffb631f3f3228830584f074d22d92",
   "recovery_verification_v7.json": "a4698b3a3c57d2355cbac76657d8106bb33086b2ee46d60741c24bf77f11c26f",
+  "recovery_verification_v8.json": "72094bc550b8dd91f9a09987b9096698f9b4e6fa4a8f0040496d95d1d1d6bd1d",
   "scripts/build_evaluation_candidate.py": "e531d1392b0bcff0c7a539df9eb727b5734ab3cd1d1ee346d5441dd27adda491",
   "scripts/build_kaggle.py": "f1ac1e959f5dcd8a454552d5e57f1d648b6c668751906a00467c6ea3a52376c8",
   "scripts/content_provenance.py": "2f6adc6c3f7355f863c810980c026df192289cc1918213cf6f9a8e0ad91bb584",
@@ -55,5 +56,6 @@
   "v7_launch_20261122.json": "1de03f66cbdce77d83d72f3db162a694fa68687ec23da8bbd4959ee908a2f494",
   "v8_epoch15_result_20261123.json": "6a4fe7b557fbe359b05cd6e2478694ba8d7998b00a3b16c98b1e0a254bbd4594",
   "v8_epoch16_result_20261123.json": "9c1fecdaf9e33b92ac1a6b0a7b2ad8e7bcfe9d4b7b41714fa58afa2ee9ad2f4a",
-  "v8_launch_20261123.json": "2e98e673beead3001c19438bd00e04fd4d705d223f9ff8c473f1845001669e00"
+  "v8_launch_20261123.json": "2e98e673beead3001c19438bd00e04fd4d705d223f9ff8c473f1845001669e00",
+  "v9_launch_20261123.json": "fb3597589e22c3741e98355bff998871ba416b741d096f52db9ac0e3ff5778ae"
 }

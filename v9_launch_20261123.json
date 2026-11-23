@@ -1,0 +1,36 @@
+{
+  "version": 373037326,
+  "url": "https://www.kaggle.com/code/bcau2025/unigdnetr-full-experiment-gpu?scriptVersionId=373037326",
+  "submitted_utc": "2026-11-23T12:09:40Z",
+  "status_observed": "queued",
+  "active_events": 1,
+  "recovery_verified": false,
+  "input_update": "Exactly one notebook input updated via confirmed dialog from V7 to V8; five dataset source IDs unchanged.",
+  "unchanged_dataset_source_ids": [
+    1327578,
+    1327590,
+    6322179,
+    6322203,
+    7040769
+  ],
+  "prior_notebook_input_version": 372832419,
+  "quota_used": "27:20 / 30 hrs",
+  "operational_cap_hours": 2,
+  "source_diff": "+1/-1; only default UNIGDNETR_SESSION_HOURS changed9to2",
+  "scientific_protocol_changed": false,
+  "accelerator": "GPU T4 x2",
+  "internet": true,
+  "draft_session": "off",
+  "editor_environment": "Pin to original environment (2026-11-02)",
+  "viewer_environment": "Latest Container Image",
+  "required_recovery": [
+    "6917 full-byte audit matches saved provenance",
+    "nine fingerprint-matched indices reused",
+    "strict format2 checkpoint acceptance",
+    "explicit RESUMED inside epoch17 batch1377",
+    "sample offsets918/task",
+    "accumulation remainder1 gradients restored"
+  ],
+  "limitation": "Queued startup is not verified recovery; runtime equivalence not yet inspected.",
+  "duplicate_launched": false
+}

@@ -1,0 +1,127 @@
+{
+  "verified_utc": "2026-11-23T12:11:46.324173+00:00",
+  "source_script_version": 372832419,
+  "source_output_url": "https://www.kaggle.com/code/bcau2025/unigdnetr-full-experiment-gpu/output?scriptVersionId=372832419",
+  "terminal_success_seconds": 33000.9,
+  "zip_files": 53,
+  "zip_integrity_passed": true,
+  "session": {
+    "state": "paused",
+    "pipeline_revision": "2026-10-25-brats-schema-rc-longitudinal-v7",
+    "dataset_fingerprint": "e8ab1ec322826bd08a468e7d17ad4fe60858b1c5f8467e770c5e5dc671394cb6",
+    "sources": [
+      "aiocta/brats2023-part-1",
+      "aiocta/brats2023-part-2zip",
+      "andrewmvd/liver-tumor-segmentation",
+      "andrewmvd/liver-tumor-segmentation-part-2",
+      "samdazel/automated-cardiac-diagnosis-challenge-miccai17"
+    ],
+    "elapsed_hours": 9.16093488653111,
+    "final_test_evaluation_complete": false,
+    "saved_utc": "2026-11-23T10:43:43Z"
+  },
+  "recovery_status": {
+    "experiment": "UniGDNetR",
+    "seed": 13,
+    "phase": "train",
+    "epoch_human": 17,
+    "epochs_total": 40,
+    "batch": 1377,
+    "batches_total": 2500,
+    "batches_consumed_by_task": {
+      "acdc": 459,
+      "brats": 459,
+      "lits": 459
+    },
+    "saved_utc": "2026-11-23T10:43:43Z",
+    "reason": "time interval",
+    "checkpoint": "/kaggle/working/UniGDNetR/checkpoints/UniGDNetR_seed13_resume.pt"
+  },
+  "checks": {
+    "cpu_checkpoint_load": true,
+    "model_ema_gradients_optimizer_best_weights_finite": true,
+    "configuration_task_specs_fingerprints_match_verified_v7": true,
+    "history_epochs": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "history_matches_saved_csv": true,
+    "history_matches_rounded_provisional_csv": true,
+    "optimizer_scheduler_scaler_rng_progress_present": true,
+    "immutable_artifacts_byte_identical_to_v7": 46,
+    "scientific_21_plan_rows_match_worker_identifier_only_differs": true,
+    "accumulation_remainder": 1,
+    "finite_pending_gradient_tensors": 78,
+    "samples_consumed_by_task": {
+      "acdc": 918,
+      "brats": 918,
+      "lits": 918
+    },
+    "dataset_inventory_difference": "Only mounted prior-notebook output size changed:112.26 MB to112.39 MB."
+  },
+  "best_checkpoint": {
+    "epoch": 16,
+    "val_macro_task_dice": 0.25765684209118545,
+    "training_complete": false
+  },
+  "latest_validation_by_task": {
+    "val_acdc_loss": 0.2773035223969442,
+    "val_acdc_dice": 0.5026155298517492,
+    "val_brats_loss": 0.44339275918900967,
+    "val_brats_dice": 0.025398103827574233,
+    "val_lits_loss": 0.34780921350233257,
+    "val_lits_dice": 0.24495689259423295,
+    "val_macro_task_dice": 0.25765684209118545
+  },
+  "artifacts": {
+    "checkpoints/UniGDNetR_seed13.pt": {
+      "bytes": 5026627,
+      "sha256": "8432cd9784721015c6fc1511982d60e8e9ff2659d849ffb984df7aad551d726a"
+    },
+    "checkpoints/UniGDNetR_seed13_resume.pt": {
+      "bytes": 25157789,
+      "sha256": "47ab8f6f717aa2f5d06fe1e50b6443ae6c2accfa6262274e5e66805b4a658e05"
+    },
+    "checkpoints/UniGDNetR_seed13_resume_status.json": {
+      "bytes": 390,
+      "sha256": "7550f3be446c6c1c90303823c908bc3b6af3edd50699edf2a6185c9898fc2bd8"
+    },
+    "logs/UniGDNetR_seed13_history.csv": {
+      "bytes": 4961,
+      "sha256": "8fdbf5a11312af07fdbd855eb6df60adf342bfcff002041f80a3bf36cfff3c50"
+    },
+    "manifests/content_provenance.json": {
+      "bytes": 2009880,
+      "sha256": "61842223c9a1ac3589950d13fec4bb98d1f1836ec90f72e279282c55cba69c96"
+    },
+    "manifests/experiment_plan.csv": {
+      "bytes": 1490,
+      "sha256": "cd74e9d8b5d4ac33df8b0513a1b57cf4f73a523c4de01a22b689d2fda4dd45c9"
+    },
+    "manifests/unigdnetr_kaggle_session.json": {
+      "bytes": 542,
+      "sha256": "aa12ccb32f9d746fb425a60f271fe8efffcc9a770a388035a96864f23899b243"
+    }
+  },
+  "completed_models": 0,
+  "held_out_evaluation_complete": false,
+  "limitations": [
+    "Full container/package identity and bitwise CUDA trajectory not established.",
+    "Slice validation, not held-out volumetric results.",
+    "Local21 checkpoint/execution/repair provenance remains separately gated."
+  ]
+}
