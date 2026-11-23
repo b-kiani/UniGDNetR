@@ -1,5 +1,13 @@
 # Held-out evaluation readiness — 16 November 2026
 
+## V8 epoch 16 result — 23 November 2026, 14:51 Asia/Tashkent
+
+Live V8 **372832419** remains **Running**, with one active event. Epoch **16** ended at **28,541.4 s** with provisional validation macro Dice **0.25766**, a new best above **0.24846**; improved=True, bad_epochs=0, duration **04:40:28**. Epoch 17 began at **28,541.5 s** and reached **425/2,500 batches (17%) at 29,802.6 s**. UI runtime was **29,857.6 s**, only **55.0 s** beyond that log. Both earlier visible-log gaps were followed by forward progress without intervention; their causes remain unknown. No current stall or exception is established. See [epoch evidence](v8_epoch16_result_20261123.json).
+
+The working checkpoint is epoch **17**, train batch **387 at 29,752.4 s**, not published or byte-inspected. **V7 372675512 remains the latest trusted published recovery** until terminal V8 output verification. CSV now contains 16 consecutive provisional epoch rows. These rounded slice-validation scores are not held-out volumetric results; task-specific/full-precision epoch-16 scores have not been inspected.
+
+Run **1/21**, UniGDNetR seed **13**; **zero completed Kaggle models**, no held-out results. The healthy job was left unchanged, with no duplicate or diagnostic deployment. Original protocol, separate local checkpoint/execution/repair and held-out gates, and full-image/bitwise-runtime limitations remain. No unchanged software tests were rerun.
+
 ## V8 forward progress after earlier pause — 23 November 2026, 11:53 Asia/Tashkent
 
 Fresh V8 **372832419** logs show a new epoch-16 **batch-99 checkpoint at 15,571.1 s**, then **TRAIN 100/2,500 at 15,572.7 s**, resolving the earlier concern about no progress beyond batch 75. The interval between the old last log (11,828.3 s) and that checkpoint is **3,742.8 s (62.4 minutes)**. Forward progress occurred without cancellation, restart, editing or another launch; the cause of the gap remains unknown. **Do not continue describing the earlier batch-75 pause as an active stall.**
