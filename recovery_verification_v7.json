@@ -1,0 +1,124 @@
+{
+  "verified_utc": "2026-11-23T01:32:17.313313+00:00",
+  "source_script_version": 372675512,
+  "source_output_url": "https://www.kaggle.com/code/bcau2025/unigdnetr-full-experiment-gpu/output?scriptVersionId=372675512",
+  "terminal_success_seconds": 32592.8,
+  "zip_files": 53,
+  "zip_integrity_passed": true,
+  "session": {
+    "state": "paused",
+    "pipeline_revision": "2026-10-25-brats-schema-rc-longitudinal-v7",
+    "dataset_fingerprint": "e8ab1ec322826bd08a468e7d17ad4fe60858b1c5f8467e770c5e5dc671394cb6",
+    "sources": [
+      "aiocta/brats2023-part-1",
+      "aiocta/brats2023-part-2zip",
+      "andrewmvd/liver-tumor-segmentation",
+      "andrewmvd/liver-tumor-segmentation-part-2",
+      "samdazel/automated-cardiac-diagnosis-challenge-miccai17"
+    ],
+    "elapsed_hours": 9.046709785145,
+    "final_test_evaluation_complete": false,
+    "saved_utc": "2026-11-23T01:20:19Z"
+  },
+  "recovery_status": {
+    "experiment": "UniGDNetR",
+    "seed": 13,
+    "phase": "train",
+    "epoch_human": 15,
+    "epochs_total": 40,
+    "batch": 162,
+    "batches_total": 2500,
+    "batches_consumed_by_task": {
+      "acdc": 54,
+      "brats": 54,
+      "lits": 54
+    },
+    "saved_utc": "2026-11-23T01:20:19Z",
+    "reason": "time interval",
+    "checkpoint": "/kaggle/working/UniGDNetR/checkpoints/UniGDNetR_seed13_resume.pt"
+  },
+  "checks": {
+    "cpu_checkpoint_load": true,
+    "model_ema_gradients_optimizer_best_weights_finite": true,
+    "configuration_task_specs_fingerprints_match_verified_v6": true,
+    "history_epochs": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "history_matches_saved_csv": true,
+    "optimizer_scheduler_scaler_rng_progress_present": true,
+    "immutable_artifacts_byte_identical_to_v6": 46,
+    "scientific_21_plan_rows_match_worker_identifier_only_differs": true,
+    "accumulation_remainder": 2,
+    "samples_consumed_by_task": {
+      "acdc": 108,
+      "brats": 108,
+      "lits": 108
+    },
+    "source_dataset_inventory_matches_v6": true,
+    "dataset_inventory_difference": "Only mounted prior-notebook output size changed: 107.48 MB to 112.26 MB."
+  },
+  "best_checkpoint": {
+    "epoch": 14,
+    "val_macro_task_dice": 0.23967909553470332,
+    "training_complete": false
+  },
+  "latest_validation_by_task": {
+    "val_acdc_loss": 0.2959205831239323,
+    "val_acdc_dice": 0.47163259019515263,
+    "val_brats_loss": 0.448256923109293,
+    "val_brats_dice": 0.012796476655246008,
+    "val_lits_loss": 0.34939273175783453,
+    "val_lits_dice": 0.23460821975371127,
+    "val_macro_task_dice": 0.23967909553470332
+  },
+  "artifacts": {
+    "checkpoints/UniGDNetR_seed13.pt": {
+      "bytes": 5026627,
+      "sha256": "8c593d5585e7924c59608878bf8b013d844df3d1775b821ae5099d285a4736f7"
+    },
+    "checkpoints/UniGDNetR_seed13_resume.pt": {
+      "bytes": 25162059,
+      "sha256": "c6ec38a1d3b0c93e9bbef8eb67cd1f91e67d0f4ac4432b47feb9aaebea9149ce"
+    },
+    "checkpoints/UniGDNetR_seed13_resume_status.json": {
+      "bytes": 386,
+      "sha256": "203edd1ef288eca89181f01da4f09e7511e3ff18b4dbf062974b581ff05b88ad"
+    },
+    "logs/UniGDNetR_seed13_history.csv": {
+      "bytes": 4365,
+      "sha256": "6b2a52112b2568c334caf796f8b7d2df11568be64e5bb3eb5faf616d56980df3"
+    },
+    "manifests/content_provenance.json": {
+      "bytes": 2009880,
+      "sha256": "61842223c9a1ac3589950d13fec4bb98d1f1836ec90f72e279282c55cba69c96"
+    },
+    "manifests/experiment_plan.csv": {
+      "bytes": 1490,
+      "sha256": "855c1be269a63dc011b7ea943f07e2553230fae46079d22f78b5af8080631d2b"
+    },
+    "manifests/unigdnetr_kaggle_session.json": {
+      "bytes": 540,
+      "sha256": "bd3b03de6cff6666a70e5938617444cc2ba060aac6df613ea0a6e720ad533cf6"
+    }
+  },
+  "completed_models": 0,
+  "held_out_evaluation_complete": false,
+  "limitations": [
+    "Full container/package identity and bitwise CUDA trajectory not established.",
+    "Validation values are slice-validation results, not held-out volumetric results.",
+    "Local 21 checkpoints and local execution/repair provenance remain separately gated."
+  ]
+}

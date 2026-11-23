@@ -1,0 +1,44 @@
+{
+  "observed_utc": "2026-11-23T01:35:23.654431+00:00",
+  "version": 372832419,
+  "source": "https://www.kaggle.com/code/bcau2025/unigdnetr-full-experiment-gpu?scriptVersionId=372832419",
+  "status": "running",
+  "observed_runtime_seconds": 43.3,
+  "active_events": 1,
+  "source_diff": {
+    "added": 0,
+    "removed": 0
+  },
+  "prior_notebook_input_update": {
+    "from_version": 6,
+    "to_version": 7,
+    "confirmed_dialog": true,
+    "count": 1
+  },
+  "source_dataset_inputs_unchanged": 5,
+  "prelaunch_active_events": 0,
+  "prelaunch_quota_used": "18:10 / 30 hours",
+  "accelerator": "GPU T4 x2",
+  "internet": true,
+  "draft_session": "off",
+  "editor_environment": "Pin to original environment (2026-11-02)",
+  "viewer_environment": "Latest Container Image",
+  "operational_cap_hours": 9,
+  "scientific_protocol_changed": false,
+  "recovery_verified": false,
+  "required_restore": {
+    "source_byte_audit_files": 6917,
+    "indices_reused": 9,
+    "checkpoint_epoch_index": 14,
+    "epoch_human": 15,
+    "batch": 162,
+    "samples_consumed_per_task": 108,
+    "accumulation_remainder": 2,
+    "require_strict_acceptance_explicit_resumed_and_pending_gradient_restore": true
+  },
+  "completed_kaggle_models": 0,
+  "run_number": 1,
+  "planned_runs": 21,
+  "held_out_approved": false,
+  "trusted_published_recovery_version": 372675512
+}
