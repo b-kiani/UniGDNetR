@@ -53,5 +53,20 @@
     "Full-precision and task-specific epoch15 scores not inspected.",
     "Full container/package identity and bitwise CUDA trajectory unverified.",
     "Separate local checkpoint/execution/repair provenance and held-out gates unchanged."
-  ]
+  ],
+  "freshness_followup": {
+    "observed_at_utc": "2026-11-23T05:32:39.119971+00:00",
+    "fresh_reload": true,
+    "ui_runtime_seconds": 14275.6,
+    "last_visible_progress_log_seconds": 11828.3,
+    "epoch": 16,
+    "batch": 75,
+    "runtime_minus_last_log_seconds": 2447.3,
+    "active_events": 1,
+    "ui_status": "running",
+    "exception_observed": false,
+    "cause_established": false,
+    "classification": "Prolonged visible-log gap; possible stall, not confirmed failure.",
+    "intervention": false
+  }
 }

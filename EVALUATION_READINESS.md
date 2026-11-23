@@ -1,5 +1,12 @@
 # Held-out evaluation readiness — 16 November 2026
 
+## V8 prolonged visible-log gap — 23 November 2026, 10:32 Asia/Tashkent
+
+A fresh V8 **372832419** viewer reload still shows **Running**, one active event, runtime **14,275.6 s**. The latest visible progress remains epoch **16**, **75/2,500 batches at 11,828.3 s**: a **2,447.3 s (40.8 minute)** visible-log gap, increased from the earlier 16-minute observation. No exception is shown. This is a prolonged pause in observable progress and a possible stall; failure and cause are not established. No cancellation, restart, source/input change or duplicate launch was performed. Continue checking fresh logs; later forward progress must supersede this concern. See the appended follow-up in [epoch evidence](v8_epoch15_result_20261123.json).
+
+Epoch 15 best provisional validation macro Dice remains **0.24846**, CSV remains at **15 epochs**, and V7 remains the trusted published recovery. The latest observed working checkpoint is epoch 16 batch 0 at 11,713.0 s, not published or byte-inspected. Run 1/21, zero completed Kaggle models and no held-out results. Original protocol, local evidence and held-out gates, runtime-provenance limitations, and isolated diagnostic-candidate status remain unchanged. No unchanged software tests were rerun.
+
+
 ## V8 epoch 15 completed — 23 November 2026
 
 Live **V8 372832419** logs show epoch **15** ending at **11,713.0 s**, provisional slice-validation macro Dice **0.24846**, best **0.24846**, improved=True, bad_epochs=0 (previous best **0.23968**), duration **02:53:41**, including retained prior-session training time. Epoch **16** began at **11,713.1 s**; the latest visible training log is **75/2,500 batches (3%) at 11,828.3 s**. A fresh reload showed Running at **12,800.6 s**, one active event, approximately **16 minutes** after that last log. No exception or cause was observed and a stall is not established; continue monitoring freshness without changing the job. The latest observed working checkpoint is phase train, epoch 16 **batch 0 at 11,713.0 s**, not published or byte-inspected. See [dated epoch evidence](v8_epoch15_result_20261123.json). `provisional_validation.csv` now contains 15 consecutive epochs. The epoch-15 score is rounded from live logs; full precision and task-specific scores have not been inspected.
