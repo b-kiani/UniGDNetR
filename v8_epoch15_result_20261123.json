@@ -68,5 +68,42 @@
     "cause_established": false,
     "classification": "Prolonged visible-log gap; possible stall, not confirmed failure.",
     "intervention": false
+  },
+  "gap_resolution_followup": {
+    "observed_at_utc": "2026-11-23T06:54:21.863786+00:00",
+    "status": "running",
+    "active_events": 1,
+    "previous_gap_resolved": true,
+    "first_new_checkpoint": {
+      "epoch": 16,
+      "batch": 99,
+      "log_seconds": 15571.1
+    },
+    "first_new_progress": {
+      "epoch": 16,
+      "batch": 100,
+      "log_seconds": 15572.7
+    },
+    "prior_last_log_seconds": 11828.3,
+    "observed_inter_log_gap_seconds": 3742.8,
+    "latest_train": {
+      "epoch": 16,
+      "batch": 775,
+      "log_seconds": 17420.3
+    },
+    "latest_working_checkpoint": {
+      "epoch": 16,
+      "batch": 777,
+      "log_seconds": 17422.1,
+      "published": false,
+      "bytes_inspected": false
+    },
+    "ui_runtime_seconds": 19174.9,
+    "newest_checkpoint_age_seconds": 1752.8,
+    "newest_visible_log_gap_minutes": 29.2,
+    "cause_established": false,
+    "exception_observed": false,
+    "intervention": false,
+    "note": "Earlier batch75 gap resolved through forward progress without intervention. A later 29.2-minute visible-log gap remains; monitor freshness without asserting failure."
   }
 }
